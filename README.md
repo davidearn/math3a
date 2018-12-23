@@ -20,4 +20,4 @@ Mathematics 3A03 at McMaster University
 
 ### Information from previous years
 
-[2017 Lectures]()
+[2017 Lectures](lectures/2017/LectureSchedule2017.md)
