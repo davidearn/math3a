@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% ATTENDANCE TABLE %%
+%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tabularx}
+\newcommand{\attendancetableline}[1]{#1 & & & & & & & & & & \\ \hline}
+\newcommand{\attendancetable}{%
+\begin{tabularx}{0.75\textwidth}{ r | X | X | X | X | X || X | X | X | X | X |}
+  \hline
+  \attendancetableline{0}
+  \attendancetableline{10}
+  \attendancetableline{20}
+  \attendancetableline{30}
+  \attendancetableline{40}
+  \attendancetableline{50}
+  \attendancetableline{60}
+  \attendancetableline{70}
+  \attendancetableline{80}
+  \attendancetableline{90}
+\end{tabularx}
+}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\Huge
+
+\begin{center}
+\bfseries 
+Math 3A03 attendance count\\
+\Large\smallskip
+%%Lecture Section C01 -- Dr.~David Earn
+%%Lecture Section C02 -- Dr.~David Duncan
+%%Tutorial T01 (Monday 4:30pm) -- Nikolay Hristov
+%%Tutorial T02 (Tuesday 12:30pm) -- Nikolay Hristov
+%%Tutorial T03 (Monday 4:30pm) -- Adilbek Kairzhan
+Tutorial T04 (Tuesday 12:30pm) -- Adilbek Kairzhan
+\end{center}
+
+\medskip
+Date: \underline{\hspace{10cm}}
+
+\medskip
+%%Time: \underline{\hspace{5cm}}
+
+\medskip
+%%Lecture \#: \underline{\hspace{2.5cm}}
+Tutorial \#: \underline{\hspace{2.5cm}}
+
+\vspace{1in}
+\begin{center}
+\attendancetable
+\end{center}
+
+\end{document}

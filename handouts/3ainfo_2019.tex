@@ -1,0 +1,298 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{graphics,graphicx}
+\usepackage[table]{xcolor}
+\usepackage{xspace}
+\newcommand{\fix}[1]{{\textcolor{red}{FIX: #1}}}
+\newcommand{\note}{\noindent{\bfseries\slshape Note:\/} }
+\newcommand{\eg}{\emph{e.g.,\/}\xspace}
+\newcommand{\etc}{\emph{etc.\/}\xspace}
+\usepackage{timetable}
+
+%\usepackage{amssymb,latexsym,amsmath,setspace}
+%\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{aqua}{RGB}{0, 128, 225}
+\usepackage[colorlinks=true,citecolor=aqua,linkcolor=aqua,urlcolor=aqua]{hyperref}
+%\usepackage{xspace}
+%\usepackage{subfigure}
+%\usepackage{lineno}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INCLUDE SUBJECT IN E-MAIL LINKS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%http://tex.stackexchange.com/questions/128424/how-to-create-email-hyperlink-with-predefined-subject-in-latex
+\usepackage{etoolbox}
+\makeatletter
+\newcommand\myemail[3]{%                %\newcommand\tpj@compose@mailto[3]{%
+\edef\@tempa{mailto:#1?subject=#2 }%
+\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
+\href{\@tempb}{#3}}
+
+\catcode\%=11
+\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
+\catcode\%=14
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myemaillink}{\myemail{earn@math.mcmaster.ca}{Math 3A03: }{earn@math.mcmaster.ca}}
+\newcommand{\emaillink}[1]{\myemail{#1}{Math 3A03: }{#1}}
+
+\begin{document}
+
+\rightline{
+\scalebox{0.6}{
+\includegraphics{images/Maclogo.pdf}
+}
+}
+
+\vspace{-2cm}
+
+{\Large\parindent=0pt
+
+{\bfseries Mathematics 3A03
+
+{\slshape Real Analysis I}
+
+Course Information Sheet, Winter 2019
+
+{\color{red}\bfseries PRELIMINARY DRAFT: THIS DOCUMENT WILL BE UPDATED BEFORE THE COURSE BEGINS}
+
+}}
+
+\bigskip
+
+\noindent
+
+\section*{Online information}
+
+\paragraph*{Course web site:} \url{http://www.math.mcmaster.ca/earn/3A03}
+
+\noindent
+Course information, including announcements, handouts, lecture slides,
+assignments, solutions, useful links, {\it etc.\/}, will be available
+on the course web site.  You are expected to check it regularly.
+
+\paragraph*{Course style:}
+Lectures will be presented primarily using slides, with occasional use
+of the whiteboard.  There is no blackboard in the room.
+
+\section*{Instructor}
+
+\leftline{{\bf Instructor:} David Earn (\myemaillink)}
+\leftline{{\bf Office:} Hamilton Hall 317}
+\leftline{{\bf Office Hours:} {Thursdays 11:30am--12:20pm}}
+\leftline{{\bf Phone:} (905) 525-9140, x27245}
+\leftline{{\bf Home page:} \url{http://davidearn.mcmaster.ca}}
+
+\bigskip
+\paragraph*{Communicating with your instructor:}
+
+If you send e-mail messages to your instructor, please bear in mind that he typically receives $\sim100$ e-mail messages per day and it is easy for messages to be missed or get backlogged.  Every e-mail message you send to your instructor must have a helpful, descriptive subject line.  The subject line should always have the form ``{\tt Math 3A03: \dots}''.  Examples might be:
+\begin{verbatim}
+    Math 3A03: confusion about assignment 1, problem 2a
+    Math 3A03: progress on extra challenge problem
+    Math 3A03: dog ate my assignment
+\end{verbatim}
+
+\section*{Teaching Assistants}
+
+\leftline{{\bf Tutor/Marker:} Nikolay Hristov (\emaillink{hriston@math.mcmaster.ca})}
+\leftline{{\bf Office:} Hamilton Hall 403}
+\leftline{{\bf Office Hours:} {TBA}}
+\medskip
+\leftline{{\bf Marker:} {TBA (\emaillink{TBA@math.mcmaster.ca})}}
+\leftline{{\bf Office:} Hamilton Hall xxx}
+\leftline{{\bf Office Hours:} {TBA}}
+%% 100 tutor + 40 marker = 140 TA hours for 70+ students in 2016
+%% 2 x 110 hours = 220 TA hours for ~100 students in 2017
+%% 110 tutor + 40 marker = 150 TA hours for 80+ students in 2019
+
+\bigskip
+
+\section*{When and Where}
+
+\paragraph*{Class Times and Locations:}
+\begin{itemize}\addtolength{\itemsep}{-0.75\baselineskip}
+\item Monday and Wednesday: 11:30am--12:20pm,
+  \href{https://library.mcmaster.ca/spaces/cct}{Chester New Hall 103}
+\item Friday: 1:30--2:20pm, \href{https://library.mcmaster.ca/spaces/cct}{Chester New Hall 103}
+
+%%{\footnotesize \underline{Note}: {\slshape Hyperlinks to rooms will work only on campus or if you have a VPN connection.}}
+
+\end{itemize}
+
+\paragraph*{Tutorial Times and Locations:}
+\begin{itemize}\addtolength{\itemsep}{-0.75\baselineskip}
+\item T01:  ???, \href{https://library.mcmaster.ca/spaces/cct}{TBA}
+\item T02:  ???, \href{https://library.mcmaster.ca/spaces/cct}{TBA}
+\end{itemize}
+
+\noindent
+There is a course timetable showing all lectures, tutorials and office hours on the \hyperlink{timetable}{final page of this document}.
+
+\section*{Background and Course Content}
+
+\paragraph*{Prerequisites:} Registration in Level III or above of an Honours program in Mathematics and Statistics, or permission of the instructor.
+
+The majority of students taking Math 3A03 have taken Math 2R03, Math 2X03 (or ISCI 2A18) and Math 2XX3.  However, none of the specific content of these Level II courses is necessary to study real analysis.  Students who have done well in first year calculus and linear algebra can request permission to take Math 3A03 in their second year.
+
+\paragraph*{Official (calendar) course description:}
+Sequences of real numbers; supremum, continuity. Riemann integral, differentiation. Sequences and series of functions; uniform continuity and uniform convergence.
+
+\paragraph*{Course Objectives:}
+
+\begin{itemize}
+\item To become familiar with the rigorous development of ``mathematical analysis'', which means the areas of mathematics that involve notions such as ``limit'', ``continuity'' and ``distance'' (\eg calculus).
+\item To develop skills in understanding and constructing rigorous mathematical proofs.
+\end{itemize}
+
+\paragraph*{More detailed course description:} 
+
+The subject matter of this course is the real number system and real-valued functions of real variables. At face value, many of the topics may appear to be the same as those in first year calculus, but the emphasis and goals of the course are completely different.  The course focuses on learning to construct rigorous proofs that provide a firm foundation for the kinds of calculations and manipulations learned in elementary calculus courses.  We begin by \emph{defining} numbers and considering what properties characterize the real numbers in particular.  We re-examine sequences of real numbers and \emph{prove} fundamental results such as the Monotone Convergence Theorem (every bounded monotone sequence of real numbers is convergent).  We make the notions of limit and continuity completely rigorous, and generalize familiar concepts such as open and closed intervals to include much more complicated sets.  In the process, we reveal many subtleties about real numbers and real-valued functions that form a prelude to many fascinating topics in higher mathematics.  The course is required for several of the department's undergraduate programmes, because much advanced mathematics depends critically on a solid understanding of real analysis.
+
+\section*{Resources}
+
+\paragraph*{Textbook: } \emph{Elementary Real Analysis, Second Edition} by B.\ Thomson, J.\ Bruckner, and A.\ Bruckner.  This book is an open-source textbook and is available for free download at: \url{http://classicalrealanalysis.info/com/FREE-PDF-DOWNLOADS.php}.  The textbook is available in both portrait and landscape mode.  Both versions contain the same content, but differ in pagination.  A printed copy of the text is available for purchase from \href{https://www.amazon.ca/Elementary-Real-Analysis-Brian-Thomson/dp/143484367X/}{Amazon}.  Errata for the book can be found at: \url{http://classicalrealanalysis.info/com/TBB-Errata.php}.
+
+The course will cover most of the material in the following chapters of the text: 1, 2, 4, 5, 7, 8, 9, and 10.  Some additional material not covered in the textbook will be presented in class.  The topic of each lecture (and slides if used) will be posted on the course web site after the lecture is given.
+
+The lectures covering the rigorous theory of the Riemann Integral (chapter 8 of the textbook) will be inspired more by Michael Spivak's development of the integral in his ``Calculus'' book (Publish or Perish Inc., 2008).  This excellent book is available in the Thode library if you would like to look at it.
+
+\paragraph*{Other resources:} 
+\begin{itemize}
+\item A number of books on real analysis are available in the Thode Library and there are many useful online resources as well.
+\item All assignments and tests (\emph{with solutions}) from the 2016
+  and 2017 versions of the course are posted online on the course web site.
+%%\item All assignments and tests (\emph{with solutions}) from the 2015 version of the course \emph{taught by Prof.\ Valeriote} are posted online at \url{http://ms.mcmaster.ca/~matt/3a3.html}.
+\end{itemize}
+
+\paragraph*{Software:} Handwritten assignments are acceptable provided your handwriting is easily legible and proofs are clearly presented.  If you wish, and have time, you are welcome to typeset your assignment solutions using \LaTeX, freely available bug-free software for mathematical typsetting (\url{http://www.latex-project.org/}).  Proficiency with \LaTeX\ is a valuable skill if you plan to go on in mathematics.
+
+\paragraph*{Tutorials:} During the weekly tutorials, the tutor will be available to go over material from the course and to provide assistance with any questions that students may have.
+
+\section*{Evaluation}
+
+\paragraph*{Assignments:} There will be assignments approximately every second week.  Assignments must be submitted on time in the appropriate locker before the start of the class on the due date.  Late assignments {\bf will NOT} be accepted.  See the section on \hyperlink{dishonesty}{Academic Integrity} below.
+%
+\begin{center}
+\rowcolors{2}{yellow}{pink}
+\begin{tabular}{c|l}
+\bf Assignment & \bf Tentative Due Date \\\hline
+1 & Friday 18 January 2019 \\
+2 & Friday  1 February 2019 \\
+3 & Friday 15 February 2019 \\
+4 & Friday  8 March 2019 \\
+5 & Friday 22 March 2019 \\
+6 & Friday  5 Apr 2019
+\end{tabular}
+\end{center}
+%
+Solutions to assignments will be posted on the course web site after the due date.
+\note \emph{Only a selection of problems on each assignment will be marked; your grade on each assignment will be based only on the problems selected for marking.  Problems to be marked will be selected after the due date.}
+
+% \paragraph*{Quizzes:}
+
+% On assignment due dates, there will be an in-class quiz on the content of the assignment.  
+
+\paragraph*{Tests:}
+
+There will be {\bf two} Term Tests:
+\begin{center}
+\rowcolors{2}{yellow}{pink}
+\begin{tabular}{r|c|c}
+\bf Tentative Date & \bf Tentative Time & \bf Tentative Location \\\hline
+Monday 4 March 2019 & 7:00--8:30pm & \href{http://library.mcmaster.ca/cavs/class-dir/mdcl-1102}{TBA}\\
+Monday 1 April 2019 & 7:00--8:30pm & \href{http://library.mcmaster.ca/cavs/class-dir/mdcl-1102}{TBA}
+\end{tabular}
+\end{center}
+\noindent
+There will be no make up tests. See the policy on excused absences in \hyperlink{note1}{note~1} below.
+
+\paragraph*{Final Exam:} Will be scheduled by the registrar. Details (\eg material that will be covered, final examination locations, \etc) will be given in class.
+%% and announced on the course web site.
+
+\paragraph*{Final Grade:}
+By default, the various components of the course will be weighted as follows:
+%
+\begin{center}
+\rowcolors{2}{yellow}{pink}
+\begin{tabular}{l|c}
+\bf Component & \bf Weight \\\hline
+Assignments & 10\% \\
+Term Test 1 & 25\% \\
+Term Test 2 & 25\% \\
+Final Exam & 40\%
+\end{tabular}
+\end{center}
+The final exam will count for at least 40\% of your final grade no matter what.  However, if your grade can be improved by replacing any other component of the course by your final exam mark, then that will be done.  For example, if your final exam mark is better than your mark on Test 1, but your marks on Test 2 and all the assignments are better than your final exam mark, then your final grade will be computed by giving 65\% weight to your final exam and no weight to your Test 1 mark.  Another example: If your test marks are both better than your final exam mark, but your final exam mark is better than your mark on 3 of 6 assignments, then the three other assignments will count for a total of 5\% and your final exam will count for 45\% of your final grade.  Finally, if your final exam mark is actually better than everything else you do in the course then it will count for 100\% of your final grade.  
+
+\smallskip
+\noindent
+{\bfseries\slshape\underline{WARNING}:} \emph{Do not fool yourself into thinking that you don't need to do the work during the course!!!!  The material in this course is challenging and requires the development of a level of comfort with mathematical concepts and reasoning that almost nobody can achieve in a few days.  Work hard throughout the term and learn from the assignments and tests.}
+
+%% FIX: it would be good to check the books in Thode and on my own shelves, and 
+%%      analysis e-books that are free online or via the McMaster library, and
+%%      then fill in this section...
+%%
+%% \section*{Reference list}
+%% 
+%%  The following books may also be useful references:
+%% \vspace{-0.25cm}
+%% \begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+%% \item ...
+%% \end{itemize}
+%%  In addition, the following e-books available through the McMaster library system might %%  be useful:
+%% \begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+%% \item ...
+%% \end{itemize}
+
+%\newpage
+%\bigbreak \bigbreak
+\section*{Notes}
+
+\begin{enumerate}\addtolength{\itemsep}{-0.5\baselineskip}
+
+\item \hypertarget{note1}{}{\bf Policy on missed assignments, tests, lectures or tutorials:} 
+\begin{itemize}
+\item \url{http://www.mcmaster.ca/policy/Students-AcademicStudies/UGCourseMgmt.pdf}.
+\item If you miss an assignment or test in this course then the final exam will be given appropriate extra weighting (see discussion of Final Grade above).  If you must miss a class, it is your responsiblity to find out what was covered.  The best way to do this is to borrow a classmate's notes, read them over, and then ask your tutor or instructor if there is something that you do not understand.
+\end{itemize}
+
+\item The instructor reserves the right to change the weightings in the grading scheme. If changes are made, your grade will be calculated using the original weightings and the new weightings, and you will be given the higher of the two grades.  At the end of the course the grades may be adjusted but this can only increase your grade and will be done uniformly.  The McMaster grade equivalence chart will be used to convert between letter grades, grade points and percentages (see \url{https://registrar.mcmaster.ca/exams/grades/}).
+
+\item No calculators or other aids will be allowed during tests, quizzes or the final exam unless explicitly indicated.
+
+\item You will be required to bring your official McMaster University photo identification card to the term tests and quizzes.
+
+\item The instructor and university reserve the right to modify elements of the course during the term.  The university may change the dates and deadlines for any or all courses in extreme circumstances.  If either type of modification becomes necessary, reasonable notice and communication with the students will be given with explanation and the opportunity to comment on changes.  It is the responsibility of the student to check their McMaster email and course websites weekly during the term and to note any changes.
+
+\end{enumerate}
+
+\section*{Academic Integrity\hypertarget{dishonesty}}
+
+You are expected to exhibit honesty and use ethical behaviour in all aspects of the learning process. Academic credentials you earn are rooted in principles of honesty and academic integrity.
+
+Academic dishonesty is to knowingly act or fail to act in a way that results or could result in unearned academic credit or advantage.  This behaviour can result in serious consequences, e.g., the grade of zero on an assignment, loss of credit with a notation on the transcript (notation reads: ``Grade of F assigned for academic dishonesty''), and/or suspension or expulsion from the university.
+
+It is your responsibility to understand what constitutes dishonesty.  For information on the various kinds of a academic dishonesty please refer to the Academic Integrity Policy located at \url{http://www.mcmaster.ca/academicintegrity}.  The following illustrates only three forms of academic dishonesty:
+\begin{enumerate}\addtolength{\itemsep}{-0.5\baselineskip}
+
+\item Plagiarism, \eg the submission of work that is not one's own or for which other credit has been obtained.
+
+\item Improper collaboration in group work. In this course, you are encouraged to discuss the assigned problems with other students in your class. However, you must write the solutions in your own words without referring to any other students' work. The copying or even paraphrasing of other students' solutions will be considered academic dishonesty.
+
+\item Copying or using unauthorized aids during tests, quizzes and examinations.
+
+\end{enumerate}
+
+\bigskip \bigskip
+\noindent
+David Earn\\
+January 2019
+
+\clearpage
+\hypertarget{timetable}{}
+\input{3atimetable_2019.tex}
+
+\end{document}

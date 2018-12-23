@@ -1,0 +1,44 @@
+
+\noindent\printheading{Math 3A03 Timetable, Winter 2019}
+
+% Define the layout of your time tables
+%%\setslotsize{2.8cm}{0.3cm}
+\setslotsize{3.1cm}{0.5cm}
+\settopheight{3}
+\settextframe{0.8mm}
+
+% labels starting on the half-hour
+\setminuteoffset{30} 
+% number of days/number of *15-minute* time slots
+%%\setslotcount {5} {36}
+\setslotcount{5}{28}
+
+% Retro
+%\setframetype[t]{1}
+%\seteventcornerradius{0pt}
+
+% Print timestamps into event blocks
+%\setprinttimestamps{2}
+
+% Define event types
+%% lectures: color-blind green background, white text:
+\defineevent{lecture}    {0.345}{0.698}{0.282} {1.0}{1.0}{1.0}
+\defineevent{seminar}    {1.0} {0.4} {0.2} {1.0}{1.0}{1.0}
+%% office hours: color-blind red background, white text:
+\defineevent{officehour} {0.863}{0.090}{0.129} {1.0}{1.0}{1.0}
+%% tutorials: color-blind blue background, white text:
+\defineevent{tutorial}   {0.259}{0.478}{0.722} {1.0}{1.0}{1.0}
+\defineevent{work}       {0.21}{0.5} {0.16}{1.0}{1.0}{1.0}
+
+% Start the time table
+\begin{timetable}
+  \hours{10}{15}{1}
+  \englishdays{1}
+  \event 1 {1130} {1220} {Lecture}        {Earn\\CNH-103}   {}      {lecture}
+%%  \event 1 {1630} {1720} {Tutorial}       {Hristov\\HH-217} {}      {tutorial}
+%%  \event 2 {1230} {1320} {Tutorial}       {Hristov\\BSB-108}{}      {tutorial}
+%%  \event 2 {1330} {1520} {Office Hours}   {Hristov\\HH-403} {}      {officehour}
+  \event 3 {1130} {1220} {Lecture}        {Earn\\CNH-103}   {}      {lecture}
+  \event 4 {1130} {1220} {Office Hour}    {Earn\\HH-317}    {}      {officehour}
+  \event 5 {1330} {1420} {Lecture}        {Earn\\CNH-103}   {}      {lecture}
+\end{timetable}
