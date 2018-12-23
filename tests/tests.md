@@ -16,3 +16,5 @@
 
 - 2017 Test 1: [Questions](2017/3at1_2017.pdf) [Solutions](2017/3at1s_2017.pdf)
 - 2017 Test 2: [Questions](2017/3at2_2017.pdf) [Solutions](2017/3at2s_2017.pdf)
+- 2016 Test 1: [Questions](2016/3at1_2016.pdf) [Solutions](2016/3at1s_2016.pdf)
+- 2016 Test 2: [Questions](2016/3at2_2016.pdf) [Solutions](2016/3at2s_2016.pdf)
