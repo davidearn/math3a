@@ -7,22 +7,22 @@
 | W | L | Date | Topic | Links/Comments |
 |---|---|------|-------|----------------|
 | 1 | [01](3al01_2019.pdf) | Mon 7 Jan 2019 | Introduction |  [Course information](../handouts/3ainfo_2019.pdf) |
-|  | [02](3al02_2019.pdf) | Wed 9 Jan 2019 | Properties of &#8477 |  Chapter 1 |
-|  | [03](3al03_2019.pdf) | Thu 10 Jan 2019 | Properties of &#8477 II |  Chapter 1 |
-| 2 | [04](3al04_2019.pdf) | Mon 14 Jan 2019 | Properties of &#8477 III |  Chapter 1 |
-|  | [05](3al05_2019.pdf) | Wed 16 Jan 2019 | Properties of &#8477 IV |  Chapter 1 |
+|  | [02](3al02_2019.pdf) | Wed 9 Jan 2019 | Properties of &#8477; |  Chapter 1 |
+|  | [03](3al03_2019.pdf) | Thu 10 Jan 2019 | Properties of &#8477; II |  Chapter 1 |
+| 2 | [04](3al04_2019.pdf) | Mon 14 Jan 2019 | Properties of &#8477; III |  Chapter 1 |
+|  | [05](3al05_2019.pdf) | Wed 16 Jan 2019 | Properties of &#8477; IV |  Chapter 1 |
 |  | [06](3al06_2019.pdf) | Thu 17 Jan 2019 | Sequences |  Chapter 2 |
 | 3 | [07](3al07_2019.pdf) | Mon 21 Jan 2019 | Sequences II |  Chapter 2 |
 |  | [08](3al08_2019.pdf) | Wed 23 Jan 2019 | Sequences III |  Chapter 2 |
 |  | [09](3al09_2019.pdf) | Thu 24 Jan 2019 | Sequences IV |  Chapter 2 |
 | 4 | [10](3al10_2019.pdf) | Mon 28 Jan 2019 | Sequences V |  Chapter 2 |
 |  | [11](3al11_2019.pdf) | Wed 30 Jan 2019 | Sequences VI |  Chapter 2 |
-|  | [12](3al12_2019.pdf) | Thu 31 Jan 2019 | Sequences VII<br>Topology of &#8477 I |  Chapter 2 |
-| 5 | [13](3al13_2019.pdf) | Mon 4 Feb 2019 | Topology of &#8477 II | Chapter 4 |
-|  | [14](3al14_2019.pdf) | Wed 6 Feb 2019 | Topology of &#8477 III | Chapter 4 |
-| 6 | [15](3al15_2019.pdf) | Sat 16 Feb 2019 | Topology of &#8477 IV | Chapter 4 |
-|  | [16](3al16_2019.pdf) | Mon 18 Feb 2019 | Topology of &#8477 V | Chapter 4 |
-|  | [17](3al17_2019.pdf) | Wed 20 Feb 2019 | Topology of &#8477 VI | Chapter 4 |
+|  | [12](3al12_2019.pdf) | Thu 31 Jan 2019 | Sequences VII<br>Topology of &#8477; I |  Chapter 2 |
+| 5 | [13](3al13_2019.pdf) | Mon 4 Feb 2019 | Topology of &#8477; II | Chapter 4 |
+|  | [14](3al14_2019.pdf) | Wed 6 Feb 2019 | Topology of &#8477; III | Chapter 4 |
+| 6 | [15](3al15_2019.pdf) | Sat 16 Feb 2019 | Topology of &#8477; IV | Chapter 4 |
+|  | [16](3al16_2019.pdf) | Mon 18 Feb 2019 | Topology of &#8477; V | Chapter 4 |
+|  | [17](3al17_2019.pdf) | Wed 20 Feb 2019 | Topology of &#8477; VI | Chapter 4 |
 | 7 | [18](3al18_2019.pdf) | Sat 23 Feb 2019 | Pre-test Q\&A |  |
 |  | [19](3al19_2019.pdf) | Mon 25 Feb 2019 | Continuity | Chapter 5 |
 |  | [20](3al20_2019.pdf) | Wed 27 Feb 2019 | Continuity II | Chapter 5 |
@@ -41,7 +41,7 @@
 | 12 | [32](3al32_2019.pdf) | Wed 27 Mar 2019 | Pre-test Q\&A |  |
 |  | [33](3al33_2019.pdf) | Fri 29 Mar 2019 | Sequences of Functions II | Chapter 10 |
 |  | [34](3al34_2019.pdf) | Mon 1 Apr 2019 | Sequences of Functions III | Chapter 10 |
-| 13 | [35](3al35_2019.pdf) | Thu 4 Apr 2019 | Surreal Numbers | Guest Lecture<br>[[Media:surreal2019.pdf|slides]] |
+| 13 | [35](3al35_2019.pdf) | Thu 4 Apr 2019 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2019.pdf) |
 |  | [36](3al36_2019.pdf) | Sat 6 Apr 2019 | Pre-exam Q\&A |  |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
