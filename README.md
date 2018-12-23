@@ -6,4 +6,7 @@ Mathematics 3A03 at McMaster University
 -   **Lecture times:**
     -   Monday, Wednesday and Thursday @ 10:30am
 -   **Lecture location:**
-    -   [Chester New Hall 103](https://library.mcmaster.ca/cavs/class-dir/cnh-103)
+    -   [Chester New Hall 103](https://library.mcmaster.ca/spaces/cct)
+    (enter "CNH 103" into the search field)
+
+
