@@ -10,6 +10,6 @@
 | [25–26](3al26_2017.pdf) | Differentiation | Chapter 7 |
 | [27–31](3al31_2017.pdf) | Integration | Chapter 8 |
 | [32–34](3al34_2017.pdf) | Sequences of Functions | Chapter 10 |
-| [35](3al35_2017.pdf) | Surreal Numbers | Guest Lecture<br>[slides](./surreal2017.pdf) |
+| 35 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2017.pdf) |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
