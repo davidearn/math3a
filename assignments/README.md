@@ -8,3 +8,5 @@ information must be given in large clear text.
 - [LaTeX source file](./3aa_cover_2019.tex)
 
 # 2019 Assignment 1
+
+**DUE:** Friday 18 January 2019, 1:25pm
