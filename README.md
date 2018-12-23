@@ -14,7 +14,7 @@ Mathematics 3A03 at McMaster University
 
 [Assignments](assignments/assignments.md)
 
-[tests](tests/tests.md)
+[Tests](tests/tests.md)
 
 [Surveys](surveys.md)
 
