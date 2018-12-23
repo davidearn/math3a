@@ -1,5 +1,6 @@
 * To download slides for a lecture, click on the lecture number.
 * Slides for a sequence of lectures on the same topic are combined, so you need only the pdf for the final lecture on a given topic.
+* The schedule for lectures that have not yet occurred is _tentative_.
 * Please e-mail the instructor if you find any errors in slides.
 
 ## Lecture Schedule
@@ -23,7 +24,7 @@
 | 6 | [15](3al15_2019.pdf) | Sat 16 Feb 2019 | Topology of &#8477; IV | Chapter 4 |
 |  | [16](3al16_2019.pdf) | Mon 18 Feb 2019 | Topology of &#8477; V | Chapter 4 |
 |  | [17](3al17_2019.pdf) | Wed 20 Feb 2019 | Topology of &#8477; VI | Chapter 4 |
-| 7 | [18](3al18_2019.pdf) | Sat 23 Feb 2019 | Pre-test Q\&A |  |
+| 7 | [18](3al18_2019.pdf) | Sat 23 Feb 2019 | Pre-test Q&A |  |
 |  | [19](3al19_2019.pdf) | Mon 25 Feb 2019 | Continuity | Chapter 5 |
 |  | [20](3al20_2019.pdf) | Wed 27 Feb 2019 | Continuity II | Chapter 5 |
 | 8 | [21](3al21_2019.pdf) | NA 30 Feb 2019 | Continuity III | Chapter 5 |
@@ -38,10 +39,10 @@
 | 11 | [30](3al30_2019.pdf) | Wed 20 Mar 2019 | Integration IV | Chapter 8 |
 |  | [31](3al31_2019.pdf) | Fri 22 Mar 2019 | Integration V | Chapter 8 |
 |  | [32](3al32_2019.pdf) | Sun 24 Mar 2019 | Sequences of Functions | Chapter 9 |
-| 12 | [32](3al32_2019.pdf) | Wed 27 Mar 2019 | Pre-test Q\&A |  |
+| 12 | [32](3al32_2019.pdf) | Wed 27 Mar 2019 | Pre-test Q&A |  |
 |  | [33](3al33_2019.pdf) | Fri 29 Mar 2019 | Sequences of Functions II | Chapter 10 |
 |  | [34](3al34_2019.pdf) | Mon 1 Apr 2019 | Sequences of Functions III | Chapter 10 |
 | 13 | [35](3al35_2019.pdf) | Thu 4 Apr 2019 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2019.pdf) |
-|  | [36](3al36_2019.pdf) | Sat 6 Apr 2019 | Pre-exam Q\&A |  |
+|  | [36](3al36_2019.pdf) | Sat 6 Apr 2019 | Pre-exam Q&A |  |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
