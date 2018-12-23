@@ -13,4 +13,5 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 
 # Assignments from previous years
 
-[2017](./2017/assignments.md)
+- [2017 Assignments](./2017/assignments.md)
+- [2016 Assignments](./2016/assignments.md)
