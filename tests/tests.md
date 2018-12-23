@@ -12,3 +12,7 @@
 - Tentative time: 7:00–8:30pm
 - Tentative location: TBA
 
+# Tests from previous years
+
+- 2017 Test 1: [Questions](2017/3at1_2017.pdf) [Solutions](2017/3at1s_2017.pdf)
+- 2017 Test 2: [Questions](2017/3at2_2017.pdf) [Solutions](2017/3at2s_2017.pdf)
