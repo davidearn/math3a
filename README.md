@@ -4,7 +4,7 @@ Mathematics 3A03 at McMaster University
 ### 2019 course
 
 - **Instructor:** [David Earn](http://davidearn.mcmaster.ca)
-- **Lecture times:** Monday, Wednesday and Thursday @ 10:30am
+- **Lecture times:** Monday and Wednesday @ 11:30am and Thursday @ 1:30pm
 - **Lecture location:** [Chester New Hall 103](https://library.mcmaster.ca/spaces/cct) (enter "CNH 103" into the search field)
 - [Course information sheet 2019](handouts/3ainfo_2019.pdf)
 
