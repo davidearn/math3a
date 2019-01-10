@@ -5,6 +5,10 @@
 
 _Tutorials will begin in the second week of classes, i.e., the first tutorials will be on Monday 14 Jan 2019 and Wednesday 16 Jan 2019._
 
+## Resources
+
+[Crash course on logic (in 3 pages)](./DarioValdebenito_CrashCourseOnLogic.pdf) by [Dr. Dario Valdebenito](https://ms.mcmaster.ca/~valdebed/).
+
 ## Tutorial 1: 14/16 January 2019
 
 [Question sheet](./3at01_2019.pdf)
