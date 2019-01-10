@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 1 Questions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{January 14/16, 2019}
+	\maketitle
+	\begin{problem}
+		Prove that $2\sqrt 7$ is irrational.
+	\end{problem}
+	
+	\begin{problem}
+		Let $a,b\in\mbR$. Prove that if $0\leq a < b$ then $\sqrt a < \sqrt b$.
+	\end{problem}
+	
+	\begin{problem}
+		Find the sup,inf,max,min of the following sets. Mark as DNE if it does not exist.
+		
+		\begin{enumerate}[(a)]
+			\item $S=\{q:q\in\mathbb Q \text{ and }0\leq q \leq \sqrt 2 \}=\mathbb Q \cap [0,\sqrt 2]$\\(Note: you won't be able to write a proof of the sup yet)
+			
+			\item $S=\{\sin\left( \frac{\pi}{2n} \right) : n\in \mathbb N\}$
+			
+			\item $S=(0,3)$
+			
+			\item $S=\{\frac{1}{F_n}: n\in \mathbb N, F_N \text{ is the $n^{th}$ Fibonacci number}\}$ (Note: the Fibonacci numbers are given by $F_1=1$, $F_2=1$, $F_n=F_{n-1}+F_{n-2}$)
+			
+		\end{enumerate}
+	\end{problem}
+
+	\begin{problem}
+		Suppose that $|x-x_0|<\min{\left(\frac{|x_0|}{2},\varepsilon \frac{|x_0|^2}{2}\right)}$, and $x_0 \neq 0$ prove that \[\left|\frac 1 x - \frac 1 {x_0}\right|<\varepsilon\]
+	\end{problem}
+\end{document}
