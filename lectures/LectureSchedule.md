@@ -9,16 +9,16 @@
 |---|---|------|-------|----------------|
 | 1 | [01](3al01_2019.pdf) | Mon 7 Jan 2019 | Introduction |  [Course information](../handouts/3ainfo_2019.pdf) |
 |  | [02](3al02_2019.pdf) | Wed 9 Jan 2019 | Properties of &#8477; |  Chapter 1 |
-|  | [03](3al03_2019.pdf) | Thu 10 Jan 2019 | Properties of &#8477; II |  Chapter 1 |
+|  | [03](3al03_2019.pdf) | Fri 11 Jan 2019 | Properties of &#8477; II |  Chapter 1 |
 | 2 | [04](3al04_2019.pdf) | Mon 14 Jan 2019 | Properties of &#8477; III |  Chapter 1 |
 |  | [05](3al05_2019.pdf) | Wed 16 Jan 2019 | Properties of &#8477; IV |  Chapter 1 |
-|  | [06](3al06_2019.pdf) | Thu 17 Jan 2019 | Sequences |  Chapter 2 |
+|  | [06](3al06_2019.pdf) | Fri 18 Jan 2019 | Sequences |  Chapter 2 |
 | 3 | [07](3al07_2019.pdf) | Mon 21 Jan 2019 | Sequences II |  Chapter 2 |
 |  | [08](3al08_2019.pdf) | Wed 23 Jan 2019 | Sequences III |  Chapter 2 |
-|  | [09](3al09_2019.pdf) | Thu 24 Jan 2019 | Sequences IV |  Chapter 2 |
+|  | [09](3al09_2019.pdf) | Fri 25 Jan 2019 | Sequences IV |  Chapter 2 |
 | 4 | [10](3al10_2019.pdf) | Mon 28 Jan 2019 | Sequences V |  Chapter 2 |
 |  | [11](3al11_2019.pdf) | Wed 30 Jan 2019 | Sequences VI |  Chapter 2 |
-|  | [12](3al12_2019.pdf) | Thu 31 Jan 2019 | Sequences VII<br>Topology of &#8477; I |  Chapter 2 |
+|  | [12](3al12_2019.pdf) | Fri 1 Feb 2019 | Sequences VII<br>Topology of &#8477; I |  Chapter 2 |
 | 5 | [13](3al13_2019.pdf) | Mon 4 Feb 2019 | Topology of &#8477; II | Chapter 4 |
 |  | [14](3al14_2019.pdf) | Wed 6 Feb 2019 | Topology of &#8477; III | Chapter 4 |
 | 6 | [15](3al15_2019.pdf) | Sat 16 Feb 2019 | Topology of &#8477; IV | Chapter 4 |
