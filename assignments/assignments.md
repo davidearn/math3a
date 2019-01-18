@@ -10,6 +10,7 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 ## 2019 Assignment 1
 
 - [Question sheet](./3aa1_2019.pdf)
+- [Solutions](./3aa1s_2019.pdf)
 
 **DUE:** Friday 18 January 2019, 1:25pm
 
