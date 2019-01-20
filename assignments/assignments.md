@@ -14,6 +14,12 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 
 **DUE:** Friday 18 January 2019, 1:25pm
 
+## 2019 Assignment 2
+
+- [Question sheet](./3aa2_2019.pdf)
+
+**DUE:** Friday 2 February 2019, 1:25pm
+
 # Assignments from previous years
 
 - [2017 Assignments](./2017/assignments.md)
