@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+
+\input{coursemacros}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{enumerate} % automatically loaded by beamer
+\newtheorem{theorem}{Theorem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%% FANCY HEADER AND FOOTER STUFF %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer parameters
+\lfoot{}
+\cfoot{{\small\bfseries Page \thepage\ of \pageref{LastPage}}}
+\rfoot{}
+\renewcommand\headrulewidth{0pt} % Removes funny header line
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+{\bf Mathematics 3A03 Real Analysis I\\
+  \smallskip
+  \url{http://www.math.mcmaster.ca/earn/3A03}\\
+\smallskip
+2019 ASSIGNMENT 2}
+
+\bigskip
+
+This assignment is {\bfseries\color{red} due in the appropriate locker} on
+\textcolor{red}{\bf Friday 1 Feb 2019 at 1:25pm}.
+\end{center}
+
+\bigskip
+
+\begin{enumerate}
+
+\item Did you know that all horses are the same colour?
+
+  What is wrong with the following proof by induction?
+
+  \begin{theorem}
+    All horses are the same colour.
+  \end{theorem}
+
+  \begin{proof}
+    Let $P(n)$ be the proposition ``Any $n$ horses are the same colour.''
+
+    Consider the base case of one horse.  It is obviously the same
+    colour, so $P(1)$ is true.
+
+    Now assume $P(k)$ is true and consider a collection of $k+1$
+    horses, which we will agree to label $h_1,h_2,\ldots,h_k,h_{k+1}$.
+    Horses $h_1,\ldots,h_k$ form a collection of $k$ horses, so by the
+    induction hypothesis, they are all the same colour.  Similarly,
+    $h_2,\ldots,h_{k+1}$ form a collection of $k$ horses, so they are
+    all the same colour.  But horses $h_2,\ldots,h_k$ are in both
+    collections, so all $k+1$ horses must be the same colour!
+
+    Hence, by the principle of mathematical induction, $P(n)$ is true
+    for all $n\in\naturals$, \ie all horses are the same colour.
+  \end{proof}
+  \sidecomment{With thanks to my undergraduate analysis tutor, Costa
+    Roussakis,\\who first alerted me to this illuminating argument. --DE}
+
+\item Use the formal definition of a limit of a sequence to prove that
+  \begin{enumerate}[(a)]
+  \item $\displaystyle\lim_{n\to\infty} \frac{n+1}{n+2} = 1$ ;
+  \item $\displaystyle\lim_{n\to\infty} \frac{n^3-1}{n^4-1} = 0$ ;
+  \item $\displaystyle\lim_{n\to\infty} \frac{n!}{n^n} = 0$ ;
+  \end{enumerate}
+
+\item Use the formal definition to prove that the following sequences
+$a_n$ \undersmash{\slshape diverge} as $n\to\infty$.
+  \begin{enumerate}[(a)]
+  \item $a_n = 1 + nd$, $d\ne0$.
+  \item $a_1=1$, $a_{n+1} = 2^{a_n}$ for $n\in\naturals$.
+  \end{enumerate}
+
+\item \begin{enumerate}[(a)]
+  \item Suppose that $\{a_n\}$ is a convergent sequence for which
+    $0\le a_n\le 1$ for all $n\in\naturals$ and
+    $L=\lim_{n\to\infty}a_n$.  Prove that $L\in[0,1]$.
+  \item Find a convergent sequence $\{a_n\}$ of points all in $(0,1)$
+    such that $\lim_{n\to\infty}a_n$ is not in $(0,1)$.
+  \end{enumerate}
+
+\item  Show that \href[page=12]{https://davidearn.github.io/math3a/lectures/3al06_2019.pdf}{the formal definition of convergence of a sequence that we gave in class} is equivalent to the following slight modification:
+  \begin{quote}
+    We write $\displaystyle\lim_{n\to\infty} s_n = L$ provided that for every positive integer $m$
+    there is an integer $N$ so that $\abs{s_n - L} < \frac1m$ whenever $n \ge N$.
+  \end{quote}
+  
+\end{enumerate}
+\end{document}
