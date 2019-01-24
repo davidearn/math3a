@@ -1,0 +1,308 @@
+%% 3amacros.tex
+
+\usepackage{graphics,graphicx}
+\usepackage{amsthm} % for theorems, proofs, \qedsymbol, etc
+\usepackage{xspace}
+\newcommand{\fix}[1]{{\textcolor{red}{FIX: #1}}}
+\newcommand{\todo}[1]{{\textcolor{red}{{\bfseries To Do:} #1}}}
+%% \note is defined in beamer, hence:
+\newcommand{\Note}{\emphblue{\underline{Note}:} }
+%%\newcommand{\mynote}{\noindent{\bfseries\slshape Note:\/} }
+%% my use of above to make note environment:
+\newenvironment{mynote}[1][Note:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\usepackage{multicol}
+%%\usepackage[table]{xcolor} % for rowcolors %% causes option clash...
+\usepackage{colortbl} % for \arrayrulecolor
+\newcommand{\hlinecolor}[1]{\arrayrulecolor{#1}\hline\arrayrulecolor{black}}
+\usepackage{xcolor}
+\definecolor{aqua}{RGB}{0, 128, 225}
+\definecolor{beamerblue}{RGB}{50, 56, 176}
+\definecolor{beamergreen}{RGB}{15, 95, 9}
+%%\usepackage[colorlinks=true,citecolor=aqua,linkcolor=aqua,urlcolor=aqua]{hyperref}
+%%NOTE: beamer loads hyperref already so to add options it must be done in the \documentclass comand
+%% http://tex.stackexchange.com/questions/263999/clash-with-usepackageoptionshyperref-and-beamer
+%% NOTE: beamer loads hyperref itself, so option changes must be
+%%       done via \hypersetup not via \usepackage[...]{hyperref}
+\usepackage{hyperref}
+\hypersetup{colorlinks}
+\hypersetup{citecolor=aqua}
+%%\hypersetup{linkcolor=beamerblue} % beamerblue doesn't work well for linkcolor
+\hypersetup{linkcolor=aqua}
+\hypersetup{urlcolor=aqua}
+
+%%\usepackage{kmath} % \varheartsuit (filled heart) % but it alters
+%% all fonts annoyingly
+
+\usepackage{amsmath,amssymb}
+\usepackage{cancel} % for \cancel
+
+%%gobbling arguments
+\newcommand{\gobble}[1]{}
+
+%\def\reals{{\rm I\kern-.19em R}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\rationals}{\mathbb{Q}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\complexes}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\term}[1]{{\bfseries\slshape\color{beamerblue}#1}}
+\newcommand{\Ker}{{\text{Ker}\,}}
+\newcommand{\Range}{{\text{Range}\,}}
+\newcommand{\diag}{{\text{diag}}}
+\newcommand{\sign}{{\text{sign}}}
+\newcommand{\alg}{{\text{alg}}}
+\newcommand{\geom}{{\text{geom}}}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\R}{{\cal R}}
+\newcommand{\pcrit}{p_{\textrm{crit}}}
+\newcommand{\Tlat}{T_{\textrm{lat}}}
+\newcommand{\Tinf}{T_{\textrm{inf}}}
+\newcommand{\colvec}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
+\newcommand{\myspace}{\vspace{5pt}}
+\newcommand{\avg}[1]{\left\langle#1\right\rangle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BLANKS AND FILLED-IN BLANKS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% blanks to fill in:
+%% FIX: this version doesn't take an argument.  The version in 3at1_2016.Rnw is
+%%      much better.  Before changing it here, I need to find instances of its
+%%      use and replace them with \theblank{2cm}.
+\newcommand{\theblank}{\underline{\hspace{2cm}}\xspace}
+%% filled blanks:
+%% http://tex.stackexchange.com/questions/18576/get-width-of-a-given-text-as-length
+%% NOTE: the calc package is incompatible with the soul package,
+%%       which is used in 3at1_2016_phantom.Rnw to get blacked out text,
+%%       but calc isn't used in that file, so I've implemented this quick fix:
+%%\usepackage{calc}
+\makeatletter
+\@ifpackageloaded{soul}{}{\usepackage{calc}}
+\makeatother
+%%       However, the calc package can be used itself without soul to achieve
+%%       black outs.  See
+%% http://tex.stackexchange.com/questions/30081/how-can-i-sum-two-values-and-store-the-result-in-other-variable
+%%
+\newlength{\sidelengthtemp}
+\newcommand{\thefilled}[2]{\setlength{\sidelengthtemp}{(#1-\widthof{\texttt{#2}})/2}\undersmash{\hspace{\sidelengthtemp}\texttt{#2}\hspace{\sidelengthtemp}}}
+%% \theblankanswer is like \theblank but takes the answer rather than a length
+\newlength{\lengthtemp}
+\newcommand{\theblankanswer}[1]{\setlength{\lengthtemp}{(5mm+\widthof{\texttt{#1}}+5mm)}\undersmash{\hspace{\lengthtemp}}}
+\newcommand{\thefillwith}[1]{\setlength{\lengthtemp}{(5mm+\widthof{\texttt{#1}}+5mm)}\undersmash{\thefilled{\lengthtemp}{{\texttt{#1}}}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\newcommand{\Rlogo}{\protect\includegraphics[height=2ex,keepaspectratio]{images/Rlogo.pdf}\xspace}
+\newcommand{\Rlogo}{\protect\includegraphics[height=2ex,keepaspectratio]{images/Rlogo.png}\xspace}
+\newcommand{\XPPAUT}{\texttt{XPPAUT}\xspace}
+\newcommand{\ie}{\emph{i.e., }}
+\newcommand{\eg}{\emph{e.g., }}
+\newcommand{\etal}{\emph{et al.\/}\xspace}
+
+\newcommand{\mainterm}[1]{{\bfseries#1}}
+\newcommand{\approach}{\underline{\smash{\slshape Approach}}: }
+
+%% relations
+\newcommand*{\defeq}{\stackrel{\text{\bfseries def}}{=}}
+\newcommand*{\qdefeq}{\quad\stackrel{\text{\bfseries def}}{=}\quad}
+
+%% other rigorous pure math macros
+\newcommand*{\rednexists}{{\color{red}\nexists}}
+\newcommand*{\qto}{\quad\to\quad}
+\newcommand*{\qimplies}{\quad\implies\quad}
+\newcommand*{\bqimplies}{{\color{beamerblue}\quad\implies\quad}}
+\newcommand*{\ntimes}{{\color{beamerblue}n\text{ times}}}
+\newcommand*{\mtimes}{{\color{beamerblue}m\text{ times}}}
+\newcommand*{\qqimplies}{\qquad\implies\qquad}
+\newcommand*{\contradiction}{\Rightarrow\Leftarrow}
+\newcommand*{\suchthat}{\,\rlap{{\rm)}}{\text{\rm--}}\,}
+\let\emptyset=\varnothing
+\newcommand*{\lxor}{\mathbin{\veebar}}
+\newcommand*{\undersmash}[1]{\underline{\smash{#1}}}
+\newcommand*{\SolutionOnBoard}{{\footnotesize(solution on board)}}
+\newcommand*{\TBB}[2]{{\footnotesize(Textbook~(TBB)~\href[page=#1]{../book/TBB-AllChapters-Landscape.pdf}{#2})}}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\closure}[1]{\overline{#1}}
+\newcommand{\interiortext}[1]{\text{\upshape int}{(#1)}}
+\newcommand{\interior}[1]{{#1}^\circ}
+\newcommand{\comp}{\text{\upshape{c}}} % complement of a set E is E^\comp
+\newcommand{\dom}{\text{\upshape{dom}}}
+\newcommand{\xbar}{{\overline{x}}}
+
+%% yes/no
+\newcommand{\yes}{{\color{beamergreen}\bfseries YES}}
+\newcommand{\no}{{\color{red}\bfseries NO}}
+
+%% shorthand for synchrony math
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\M}{\mathsf{M}}
+\DeclareMathAlphabet{\mathslbf}{OT1}{cmr}{bx}{it} % LaTeX Companion, p.177
+%%\newcommand{\x}{\mathslbf{x}} 
+%%   Above gives slanted bold with serif, whereas we
+%%   actually want slant bold sans-serif for beamer
+%%   to be consistent with the math font that is used.
+%%   These pages propose various solutions:
+%%http://tex.stackexchange.com/questions/37906/bold-italic-math-bm-and-sansmath
+%%http://tex.stackexchange.com/questions/77640/bold-italic-and-sans-serif-math-symbols
+%%http://tex.stackexchange.com/questions/98279/does-boldface-sans-serif-not-work
+%%   However, for \e the con serif font looks fine:
+\newcommand{\e}{\mathslbf{e}}
+%% coloured indices:
+\newcommand{\icolor}{{\color{red}i}}
+\newcommand{\jcolor}{{\color{cyan}j}}
+\newcommand{\ijcolor}{\icolor\jcolor}
+\newcommand{\onecolor}{{\color{red}1}}
+\newcommand{\twocolor}{{\color{cyan}2}}
+
+%% coloured text macros
+\IfFileExists{colourdefs.tex}{\input{colourdefs}}{}
+\newcommand{\redheart}{{\color{red}\heartsuit}}
+\newcommand{\emphblue}[1]{\emph{\color{beamerblue}#1}}
+\newcommand{\ECP}{{\color{magenta}Extra Challenge Problem}\xspace}
+\newcommand{\ECPs}{{\color{magenta}Extra Challenge Problems}\xspace}
+\newcommand{\ECPcolon}{{\color{magenta}Extra Challenge Problem:}\xspace}
+%% lower case:
+\newcommand{\susceptible}{{\colourblindgreen{susceptible}}}
+\newcommand{\susceptibles}{{\colourblindgreen{susceptibles}}}
+\newcommand{\infective}{{\colourblindred{infective}}}
+\newcommand{\infectives}{{\colourblindred{infectives}}}
+\newcommand{\removed}{{\colourblindblue{removed}}}
+%% Capitzlized:
+\newcommand{\Susceptible}{{\colourblindgreen{Susceptible}}}
+\newcommand{\Susceptibles}{{\colourblindgreen{Susceptibles}}}
+\newcommand{\Infective}{{\colourblindred{Infective}}}
+\newcommand{\Infectives}{{\colourblindred{Infectives}}}
+\newcommand{\Removed}{{\colourblindblue{Removed}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% border tables for definitions of finite fields %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\bordertabletwo#1&#2&#3\\#4&#5&#6\\#7&#8&#9\\{
+    \begin{tabular}{ r|c|c| }
+        \multicolumn{1}{r}{#1}
+      & \multicolumn{1}{c}{#2}
+      & \multicolumn{1}{c}{#3} \\
+      \cline{2-3}
+      #4 & #5 & #6 \\
+      \cline{2-3}
+      #7 & #8 & #9 \\
+      \cline{2-3}
+    \end{tabular}
+}
+
+%% This fails because max 9 parameters are allowed!
+%%\def\bordertablethree#1&#2&#3&#4\\#5&#6&#7&#8\\#9&#10&#11&12\\#13&#14&#15&16\\{
+%%    \begin{tabular}{ r|c|c|c| }
+%%        \multicolumn{1}{r}{#1}
+%%      & \multicolumn{1}{c}{#2}
+%%      & \multicolumn{1}{c}{#3}
+%%      & \multicolumn{1}{c}{#4} \\
+%%      \cline{2-4}
+%%      #5 & #6 & #7 & #8 \\
+%%      \cline{2-4}
+%%      #9 & #10 & 11 & 12 \\
+%%      \cline{2-4}
+%%      #13 & #14 & 15 & 16 \\
+%%      \cline{2-4}
+%%   \end{tabular}
+%%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% solutions
+\newcommand{\mysolution}{{\bfseries\slshape\color{blue}Solution: }}
+\newcommand{\thickredline}{{\color{red}\bigskip\begin{center}\linethickness{2mm}\line(1,0){250}\end{center}\bigskip}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INCLUDE SUBJECT IN E-MAIL LINKS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%http://tex.stackexchange.com/questions/128424/how-to-create-email-hyperlink-with-predefined-subject-in-latex
+\usepackage{etoolbox}
+\makeatletter
+\newcommand\myemail[3]{%                %\newcommand\tpj@compose@mailto[3]{%
+\edef\@tempa{mailto:#1?subject=#2 }%
+\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
+\href{\@tempb}{#3}}
+
+\catcode\%=11
+\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
+\catcode\%=14
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\thiscoursecode}{3A03}
+\newcommand{\myemaillink}{\myemail{earn@math.mcmaster.ca}{Math \thiscoursecode: }{earn@math.mcmaster.ca}}
+%% Note: you must say {\tt\kenemaillink} to avoid < and > being typeset as bangs.
+\newcommand{\kenemaillink}{\myemail{moylek@mcmaster.ca}{Math \thiscoursecode: software}{Ken Moyle <moylek@mcmaster.ca>}}
+\newcommand{\emaillink}[1]{\myemail{#1}{Math \thiscoursecode: }{#1}}
+\newcommand{\emailputnam}[1]{\myemail{#1}{Math \thiscoursecode: Putnam Competition}{#1}}
+\newcommand{\emailgroupname}{\myemail{earn@math.mcmaster.ca}{Math \thiscoursecode: *** GROUP NAME HERE ***}{e-mail the instructor}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CHANGE MARGINS TEMPORARILY %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% http://tex.stackexchange.com/questions/588/how-can-i-change-the-margins-for-only-part-of-the-text
+
+%%\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+%%\let\endchangemargin=\endlist
+\usepackage{scrextend}
+
+%%%%%%%%%%%%%
+%% MARKING %%
+%%%%%%%%%%%%%
+%% for solutions to multiple choice questions:
+\newcommand{\correct}{{\color{blue}\fbox{\color{red}\checkmark} }}
+%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HIDE TEXT INCLUDING PARAGRAPHS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%http://tex.stackexchange.com/questions/43069/how-to-replace-a-large-block-of-text-by-an-empty-block-of-the-same-size
+
+\usepackage{adjustbox}
+\usepackage{varwidth}
+
+\newcommand{\Hide}{%
+    \adjustbox{varwidth=\linewidth,precode=\phantom}%
+}
+% Usage: \Hide{<content, can be multiple paragraphs>}
+%    or  \Hide\bgroup <content, ...> \egroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LINE BREAKS IN CELLS OF TABULAR ENVIRONMENT %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% http://tex.stackexchange.com/questions/2441/how-to-add-a-forced-line-break-inside-a-table-cell
+\usepackage{makecell}
+%%\renewcommand\theadalign{cb}
+%%\renewcommand\theadfont{\bfseries}
+%%\renewcommand\theadgape{\Gape[4pt]}
+%%\renewcommand\cellgape{\Gape[4pt]}
+
+%% MISC PACKAGES %%
+\usepackage{centernot} % e.g., \centernot\impliedby
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIR equations in COLOUR %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \input colourdefs
+\newcommand{\vspaceamount}{2pt}
+\newcommand{\SIReqns}{%
+  \begin{align*}
+    \frac{d\colourblindgreen S}{dt} &= -\beta {\colourblindgreen S}{\colourblindred I}\\
+    \noalign{\vspace{\vspaceamount}}
+    \frac{d\colourblindred I}{dt} &= \beta {\colourblindgreen S}{\colourblindred I} -\gamma {\colourblindred I} \\
+    \noalign{\vspace{\vspaceamount}}
+    \frac{d\colourblindblue R}{dt} &= \gamma {\colourblindred I}
+  \end{align*}
+}
+
+%% Side comments
+\newcommand{\sidecomment}[1]{\begin{flushright}\scriptsize\setlength{\baselineskip}{0pt}#1\end{flushright}}
+
+%% derivatives
+\newcommand\dbyd[2]{\frac{\mathrm d{#1}}{\mathrm d{#2}}} % first order derivative

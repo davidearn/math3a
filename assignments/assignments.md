@@ -17,6 +17,7 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 ## 2019 Assignment 2
 
 - [Question sheet](./3aa2_2019.pdf)
+- [LaTeX source file for Question sheet](./3aa2_2019.tex)
 
 **DUE:** Friday 2 February 2019, 1:25pm
 
