@@ -1,9 +1,6 @@
 # math3a
 Mathematics 3A03 at McMaster University
 
-***NOTE:*** Typos in question 4 of assignment 1 have been corrected.
-Please download the [revised question sheet](assignments/3aa1_2019.pdf).
-
 ### 2019 course
 
 - **Instructor:** [David Earn](http://davidearn.mcmaster.ca)
