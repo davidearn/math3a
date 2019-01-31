@@ -20,7 +20,7 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 - [LaTeX source file for Question sheet](./3aa2_2019.tex)
 - [LaTeX macro file](./coursemacros.tex)
 
-**DUE:** Friday 2 February 2019, 1:25pm
+**DUE:** Friday 1 February 2019, 1:25pm
 
 # Assignments from previous years
 
