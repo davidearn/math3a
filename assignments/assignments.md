@@ -23,6 +23,14 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 
 **DUE:** Friday 1 February 2019, 1:25pm
 
+## 2019 Assignment 3
+
+- [Question sheet](./3aa3_2019.pdf)
+- [LaTeX source file for Question sheet](./3aa3_2019.tex)
+- [LaTeX macro file](./coursemacros.tex)
+
+**DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Friday 15 February 2019, 1:25pm
+
 # Assignments from previous years
 
 - [2017 Assignments](./2017/assignments.md)
