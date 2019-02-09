@@ -1,0 +1,197 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 4 Questions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{February 4/6, 2019}
+	\maketitle
+	
+	\begin{problem}
+		Let $a_n,b_n$ be Cauchy sequences. Prove that $a_nb_n$ is also Cauchy. If $b_n$ were only bounded, would their product be Cauchy?
+	\end{problem}
+
+		\begin{proof}
+		Let $a_n$ and $b_n$ be Cauchy sequences. Then we have for each $\epsilon>0$ an $N_1,N_2\in \mathbb N$ so that
+		
+		\[
+		|a_n-a_m|<\frac {\epsilon }{2L} 
+		\]
+		
+		$\forall n,m\geq N_1$ and
+		
+		\[
+		|b_n-b_m|<\frac{\epsilon}{2K}
+		\]
+		
+		$\forall n,m\geq N_2$. Where we have $K,L>0$ and $|a_n|\leq K, |b_n|\leq L$. We know these constants exist since Cauchy sequences are bounded.
+		
+		Then for any $\epsilon>0$ let $N=\max(N_1,N_2)$, with $N_1, N_2$ chosen as above. Then $\forall n,m\geq N$ we have
+		
+		\begin{align*}
+		|a_nb_n-a_mb_m|&=|a_nb_m - a_nb_m +a_nb_m-a_mb_m|\\
+		&=|a_n(b_n-b_m)+(a_n-a_m)b_n|\\
+		&\leq  |a_n||b_n-b_m| + |b_n||a_n-b_m|\tag{By Triangle ineqaulity}\\
+		&\leq K|b_n-b_m|+L|a_n-a_m| \tag{by boundedness}\\
+		&<\frac{K\epsilon}{2K}+\frac{L\epsilon}{2L}=\frac \epsilon 2 + \frac \epsilon 2 =\epsilon 
+		\end{align*}
+	\end{proof}
+	
+
+
+	\begin{problem}
+		Show that $\displaystyle{\lim_{n \to \infty}} \sqrt[n]{n} = 1$. Hint: Think of another sequence $x_n$ with $ \sqrt[n]{n}=1+x_n$ and show that $x_n$ approaches zero by (for example) the squeeze theorem.
+	\end{problem}
+
+	
+	\begin{proof}
+		As it was said above, for each $n \geq 2$ we define the sequence 
+		$\sqrt[n]{n} = 1+x_n$. Then, for each $n \geq 2$, 
+		$x_n = \sqrt[n]{n} -1 > 0$ and
+		$n = (1+x_n)^n$.
+		The binomial theorem implies that  
+		\begin{equation}
+		\label{binomial}
+		(1+x_n)^n = 1 + nx_n + \frac{n(n-1)}{2}x_n^2 + \cdots + x_n^n.
+		\end{equation}
+		Since all the terms in the expansion (\ref{binomial}) are positive, 
+		$$
+		n = (1+x_n)^n > \frac{n(n-1)}{2}x_n^2,
+		$$ 
+		and so,  
+		$$
+		0< x_n^2 < \frac{2}{n-1}.
+		$$
+		Since $\frac{2}{n-1} \to 0$ as $n \to \infty$, the squeeze theorem implies that $x_n \to 0$ as $n \to \infty$. From the last statement, by the algebra of limits, we get
+		$$
+		\displaystyle{\lim_{n \to \infty}} \sqrt[n]{n} = 
+		\displaystyle{\lim_{n \to \infty}} (1+x_n) = 1+0=1.
+		$$
+	\end{proof}
+
+	\begin{problem}
+		Let $a_1=2$, $a_n=\sqrt{3+5a_{n-1}}$, prove that $a_n$ converges and find its limit.
+	\end{problem}
+
+	\begin{proof}
+		
+		First, we can find its limit. Suppose that the sequence converges, then it is Cauchy. In particular we can find a sufficiently large N such that $|a_{n}-a_m|<\epsilon$ for each $\epsilon>0.$ This means that for sufficiently large $n,m$ we can make the approximation $L\approx a_n \approx a_{n-1}$, with $L$ the limit of the sequence. Replacing $a_n, a_{n-1}$ by $L$ yields: $L=\sqrt{3+5L}$ or $L^2-5L-3=0$, the limit, if it exist is one of the roots of this polynomial. There are two roots and the only positive one (note the sequence is always positive) is $L=\frac{5}{2}+\frac{\sqrt {37}}{2}$.
+		
+		Next, let's show the sequence converges. For this it is sufficient to show that it is monotonic and bounded (check a few elements yourself to verify this is a good conjecture), convergence then follows from the Monotone Convergence Theorem. 
+		
+		For monotonicity, we prove by induction. First the base case: $a_1=2<\sqrt{13}=a_2$. Now suppose that for some $n \in \mathbb N$ we have that $a_{n-1}<a_n$, we wish to show this holds for $a_{n+1}$.
+		
+		Our inductive hypothesis gives \[5a_{n-1}<5 a_n\]\[3+5a_{n-1}<3+5 a_n\]\[\sqrt{3+5a_{n-1}}<\sqrt{3+5 a_n}\]\[a_n<a_{n+1},\] hence, by POMI we have that $a_{n}<a_{n+1}$ for each $n\in \mathbb N$.
+ 		
+		Next we check boundedness by induction. Notice that $L<7$, since the sequence is monotonic increasing we expect $a_n<L$ for each $n\in \mathbb N$ (why?). So a bound we should be able to prove is $a_n<7$. For our base case we have $a_1=2<7$. Suppose that for some $n\in \mathbb N$ we have $a_n<7$, then \[a_{n+1}=\sqrt{3+5a_{n}}<\sqrt{3+5\cdot7}=\sqrt{38}<\sqrt{49}=7.\] Hence,  by the principle of mathematical induction $a_n<7$ for every $n\in \mathbb N.$
+	\end{proof}
+	
+	\begin{problem}
+		Show explicitly that $s_n=\frac{1}{\sqrt{n}}$ is
+                Cauchy. Note: this is a change from problem 4 on your
+                problem sheet to make the solution easier to
+                follow. Nevertheless a solution to problem 4 from your
+                problem sheet is provided below as problem 6.
+	\end{problem}
+
+	\begin{proof}
+		The easiest is to note that the sequence is convergent, and hence Cauchy, but we were asked to check the latter property explicitly. The second easiest thing to do, however, is to copy pieces of the proof that a convergent sequence is Cauchy.
+		
+		First some rough work: recall that we need to find $N$ for a given $\epsilon>0$ so that $|s_n-s_m|<\epsilon\,\forall n,m\geq N$. $|s_n-s_m|=\left|\frac {1}{\sqrt n}-\frac {1}{\sqrt m}\right|=\left|\frac {1}{\sqrt n}+\left(-\frac {1}{\sqrt m}\right)\right|\leq \frac{1}{\sqrt n}+\frac{1}{\sqrt m}\leq \frac{2}{\sqrt N}<\epsilon$. Here we get the first inequality through the triangle inequality, and the second from the fact that $n,m\geq N$. Notice a part of the reason this argument works is that the limit of the sequences is 0, you will need to add and subtract $L$ to get it to work if the limit were some nonzero value. We will get the last inequality if we choose $N=\lceil \frac {2}{\epsilon} \rceil + 1$.
+		
+		To write this up neater: Given $\epsilon>0$ let $N=\lceil \frac {2}{\epsilon} \rceil + 1$, then from the above inequalities if $n,m\geq N$ then $|s_n-s_m|\leq \frac{2}{\sqrt N}<\epsilon$, and hence the sequence is Cauchy by definition.
+	\end{proof}
+
+\begin{problem}
+	Suppose that $s_n$ is a bounded sequence. Prove that if subsequence of $s_n$ has a further subsequence which converges to $L$, then $s_n$ converges to $L$. 
+\end{problem}
+
+\begin{proof}
+	The proof is based on the contrapositive argument, and we will prove ``if not B, then not A'' statement. Thus, assume ``not B'', i.e. that the original sequence does NOT converge to $L$, 
+	$\displaystyle{\lim_{n \to \infty}} s_n \neq L$.
+	Then, there exists some $\epsilon >0$ such that for all $N \in \mathbb{N}$ there is some natural $n > N$ with $|s_n - L| > \epsilon$. Fix that $\epsilon$. Now, we will construct a subsequence $\{s_{n_k}\}_{k \in \mathbb{N}}$ of $\{s_n\}_{n \in \mathbb{N}}$ using the following steps:
+	\begin{itemize}
+		\item let $N=1$, then there is some $n_1 > 1$ such that 
+		$|s_{n_1} - L|>\epsilon$,
+		\item let $N=n_1$, then there is some $n_2 > n_1$ such that 
+		$|s_{n_2} - L|>\epsilon$,
+		\item continue these steps. So, at the $k$-th step, we have $N=n_{k-1}$, and there is some $n_k > n_{k-1}$ such that 
+		$|s_{n_k} - L|>\epsilon$.
+	\end{itemize}
+	Thus, using these steps we construct a subsequence $\{s_{n_k}\}_{k \in \mathbb{N}}$ of $\{s_n\}_{n \in \mathbb{N}}$ such that, for any $k \in \mathbb{N}$, $|s_{n_k} - L|>\epsilon$. We claim that this subsequence satisfies our required ``not A'' property. 
+	
+	Indeed, choose any subsequence $\{s_{n_{k_l}}\}_{l \in \mathbb{N}}$ of $\{s_{n_k}\}_{k \in \mathbb{N}}$. Then, for all $l \in \mathbb{N}$, 
+	$$
+	|s_{n_{k_l}} - L|>\epsilon.
+	$$
+	Therefore, this subsequence does NOT converge to $L$, and so, ``not A'' property is satisfied.
+	
+\end{proof}
+
+ 
+ \begin{problem}[Original version of problem 4]
+ 	Show explicitly that $s_n=\sqrt{n+1}-\sqrt{n}$ is Cauchy.
+ \end{problem}
+ 
+ \begin{proof}
+ 	We'd like to show that given $\epsilon>0$ we can find an $N\in \mathbb N$ such that if $n\geq N, m\geq N$ then $|s_n-s_m|<\epsilon$.
+ 	
+ 	Given $\epsilon>0$ let $N=\lceil\frac{2}{\epsilon}\rceil+1$. Then if $n,m\geq N$ we have (without loss of generality say $m\geq n$)
+ 	
+ 	\begin{align*}
+ 	|s_n-s_m|&=|\sqrt{n+1}-\sqrt{n}-\sqrt{m+1}+\sqrt{m}|\\
+ 	|\frac{1}{\sqrt n \sqrt{n+1}}-\frac{1}{\sqrt m \sqrt{m+1}}|&= \frac{|\sqrt m \sqrt{m+1}-\sqrt n \sqrt{n+1}|}{\sqrt n \sqrt{n+1}\sqrt m \sqrt{m+1}}
+ 	\end{align*} 
+ 	
+ 	
+ 	Since $m\geq n$ we can drop the absolute value signs
+ 	
+ 	\begin{align*}
+ 	|s_n-s_m|&=\frac{\sqrt m \sqrt{m+1}-\sqrt n \sqrt{n+1}}{\sqrt n \sqrt{n+1}\sqrt m \sqrt{m+1}}\\
+ 	&\leq \frac{1}{nm}(m+1-n)
+ 	\end{align*}
+ 	
+ 	The above inequality follows since $\sqrt{m+1}\geq \sqrt m,$ and $-\sqrt{n}\geq-\sqrt{n+1}$, so
+ 	\begin{align*}
+ 	|s_n-s_m|&\leq \frac{1}{nm}+\frac 1 n - \frac 1 m\\
+ 	&\leq \frac{1}{nm}+\frac 1 n\\
+ 	&\leq \frac 2 n \leq \frac 2 N < \epsilon
+ 	\end{align*} 
+ \end{proof}
+\end{document}
