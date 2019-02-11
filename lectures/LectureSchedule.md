@@ -21,8 +21,8 @@
 |  | [12](3al12_2019.pdf) | Fri 1 Feb 2019 | Sequences VII |  Chapter 2 |
 | 5 | [13](3al13_2019.pdf) | Mon 4 Feb 2019 | Topology of &#8477; I | Chapter 4 |
 |  | [14](3al14_2019.pdf) | Fri 8 Feb 2019 | Topology of &#8477; II | Chapter 4 |
-|  | [15](3al15_2019.pdf) | Mon 11 Feb 2019 | Topology of &#8477; III | Chapter 4 |
-| 6 | [16](3al16_2019.pdf) | Wed 13 Feb 2019 | Topology of &#8477; IV | Chapter 4 |
+| 6 | [15](3al15_2019.pdf) | Mon 11 Feb 2019 | Topology of &#8477; III | Chapter 4 |
+|  | [16](3al16_2019.pdf) | Wed 13 Feb 2019 | Topology of &#8477; IV | Chapter 4 |
 |  | [17](3al17_2019.pdf) | Fri 15 Feb 2019 | Topology of &#8477; V | Chapter 4 |
 |  | [18](3al18_2019.pdf) | Mon 25 Feb 2019 | Topology of &#8477; VI | Chapter 4 |
 | 7 | [19](3al19_2019.pdf) | Wed 27 Feb 2019 | Pre-test Q&A |  |
