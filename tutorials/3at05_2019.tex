@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 5 Questions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{February 11/13, 2019}
+	\maketitle
+	
+		\begin{problem}
+		Which of the following sets are countable:
+		
+		\begin{enumerate}[(a)]
+			\item $\mbR \setminus \mbQ$.
+			
+			\item $\left\{ \frac 1 n : n \in \mbN \right\}$.
+			
+			\item $A\times B = \left\{ (a,b): a\in A, b\in B \right\}$, where A and B are countable.
+			
+			\item $\mbQ \cup \left(\sqrt 2 \mbQ \right)$, where $\sqrt 2 \mbQ = \left\{\sqrt 2 q: q\in \mbQ \right\}$.
+		\end{enumerate}
+	\end{problem}
+
+	\begin{problem}
+		Let $A,B$ be countable sets, and $\mathcal C=\{a+bi: a \in A,b\in B\}$, where $i^2=-1$, prove that $\mathcal C$ is countable.
+	\end{problem}
+
+	\begin{problem}
+		Show that every interior point is an accumulation point.
+	\end{problem}
+
+	\begin{problem}
+		Write the open interval $(0,2)$ as a union of closed sets. Can it be expressed as an intersection of closed sets?
+	\end{problem}
+
+	\begin{problem}
+		
+		\begin{enumerate} [(a)]
+		\item Find the closure, interior points, accumulation points, and boundary points of the set $[0,\sqrt 5] \cap \mbQ$. Is this set open? Is it closed?
+		
+		\item Show that $(0,3)$ is open. 
+		
+		\item Show that $[0,3]$ is closed.
+		
+	\end{enumerate}
+	\end{problem}
+
+
+	
+\end{document}
