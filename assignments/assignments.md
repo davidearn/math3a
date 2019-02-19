@@ -28,6 +28,7 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 - [Question sheet](./3aa3_2019.pdf)
 - [LaTeX source file for Question sheet](./3aa3_2019.tex)
 - [LaTeX macro file](./coursemacros.tex)
+- [Solutions](./3aa3s_2019.pdf)
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Friday 15 February 2019, 1:25pm
 
