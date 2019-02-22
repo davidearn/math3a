@@ -32,6 +32,12 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Friday 15 February 2019, 1:25pm
 
+## 2019 Assignment 4
+
+- [Question sheet](./3aa4_2019.pdf)
+
+**DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Friday 8 March 2019, 1:25pm
+
 # Assignments from previous years
 
 - [2017 Assignments](./2017/assignments.md)
