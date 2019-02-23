@@ -30,3 +30,7 @@ _Tutorials will begin in the second week of classes, i.e., the first tutorials w
 
 [Question sheet](./3at05_2019.pdf), 
 [Solutions](./3at05s_2019.pdf)
+
+## Tutorial 6: 25/27 February 2019
+
+[Question sheet](./3at06_2019.pdf), 
