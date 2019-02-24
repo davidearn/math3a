@@ -26,8 +26,8 @@
 |  | [17](3al17_2019.pdf) | Fri 15 Feb 2019 | Topology of &#8477; V | Chapter 4 |
 | 7 | [18](3al18_2019.pdf) | Mon 25 Feb 2019 | Continuity | Chapter 5 |
 |  | [19](3al19_2019.pdf) | Wed 27 Feb 2019 | Continuity II | Chapter 5 |
-|  | [20](3al20_2019.pdf) | Fri 1 Mar 2019 | Continuity III | Test 1 at 7:00pm |
-| 8 | [21](3al21_2019.pdf) | Mon 4 Mar 2019 | Continuity IV | Chapter 5 |
+|  | [20](3al20_2019.pdf) | Fri 1 Mar 2019 | Continuity III | Chapter 5 |
+| 8 | [21](3al21_2019.pdf) | Mon 4 Mar 2019 | Continuity IV | Test 1 at 7:00pm |
 |  | [22](3al22_2019.pdf) | Wed 6 Mar 2019 | Continuity V | Chapter 5 |
 |  | [23](3al23_2019.pdf) | Fri 8 Mar 2019 | Continuity VI | Chapter 5 |
 | 9 | [24](3al24_2019.pdf) | Mon 11 Mar 2019 | Differentiation | Chapter 7 |
