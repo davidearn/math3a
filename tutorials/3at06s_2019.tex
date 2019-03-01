@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+\newcommand {\mcI} {\mathcal I}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 6 Questions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{February 25/27, 2019}
+	\maketitle
+	
+	
+	\begin{problem}
+		
+		\begin{enumerate} [(a)]
+		\item Find the closure, interior points, accumulation points, and boundary points of the set $S=[0,\sqrt 5] \cap \mbQ$. Is this set open? Is it closed?
+		
+		\item Show that $O=(0,3)$ is open. 
+		
+		\item Show that $C=[0,3]$ is closed.
+		
+	\end{enumerate}
+	\end{problem}
+	\begin{proof}
+		
+		
+	
+		(a) The closure of the set is $[0, \sqrt 5]$. The interior points of the set are $\emptyset$, since for any point q in the set and any $c>0$ we have points in $[q-c,q+c]$ which are not in the set since between any two real numbers there is an irrational number. The accumulation points of the set are $[0,\sqrt 5]$, since by density of the real numbers given a $c>0$ and $x\in [0,\sqrt 5]$ we can find a rational number in $[x-c,x+c]\cap (S\setminus \{x\})$. By similar reasoning $[0,\sqrt 5]$ are the boundary points of S. The set is not open since there are points in the set which are not interior points. S is not closed since it does not contain all of its accumulation points.
+		
+		(b) To show that the set is open we need to verify that each $x\in (0,3)$ is an interior point. Suppose that $x\in (0,3)$, then $0<x<3$. To verify this is an interior point we need to find a $c>0$ such that $(x-c,x+c)\subseteq (0,3)$. Note that if $0<c\leq\frac x 2$ then $x-c\geq x - \frac x 2 = \frac x 2 >0$, further if $0<c\leq \frac {3-x} 2$ then $x+c\leq \frac {3+x} 2 < 3$. Then if we pick $c=\min (\frac x 2, \frac {3-x}2)$ the requirements that $0<c\leq \frac x 2$ and $0<c\leq \frac {3-x} 2$ are satisfied, hence $0<x-c<x+c<3$, and $(x-c,x+c)\subseteq (0,3)$.
+		
+		(c) We have 2 options, one is to show that the complement $[0,3]^C = (-\infty,0)\cup (3,\infty)$ is open, or we can show that the set contains all of its accumulation points. Let's do the latter. First note that if $x\in [0,3]$, then every neighbourhood of x contains infinitely many points of the interval, so $x$ is an accumulation point. We need to show that there are no accumulation points outside of the set. i.e. we need to show that if $x>3$ or $x<0$ then $x$ is \textbf{not} an accumulation point of the set. What we need to prove is for such an $x$ there exists a $c>0$ such that $(x-c,x+c)\cap ([0,3]\setminus \{x\})=\emptyset$. Suppose that $x<0$ and let $c=\frac{|x|}{2}$, then $x+c<0$ as well, hence $(x-c,x+c)\cap ([0,3]\setminus \{x\})=\emptyset$ since the sets are disjoint (note that $\sup (x-c,x+c)=-\frac{|x|}{2}< 0=\inf [0,3]$). A similar argument shows that each $x>3$ is also not an accumulation point.
+		
+		
+	\end{proof}
+
+	\begin{problem}
+		Show that $S=[0,1]\cap \mbQ$ is not compact by verifying explicitly that the Heine-Borel property does not hold. Hint: How was this approached in class for $(0,1]$? How can that proof be modified?
+	\end{problem}
+	
+	\begin{proof}
+		In class for the set $(0,1]$ we formed an open cover of the set (with no finite subcover) by approaching one of the limit points (namely 0) which is not inside the set with a family of sets. An example of a family of sets which form an open cover is $O_n=(\frac 1 n, 2)$. We can do take a similar approach by using a limit point of the rational numbers between 0 and 1 not in the set, namely irrational numbers between 0 and 1. So for example $\frac {\sqrt 2} 2\notin S$, but it is a limit point of S. Notice that \[S=[0,1]\cap \mbQ=([0,\frac {\sqrt 2} 2)\cap \mbQ)\cup ((\frac {\sqrt 2} 2,1]\cap \mbQ).\] 
+		
+		Let $O_0 = (\frac{\sqrt 2}{2}, 2),O_n=(-1,\frac{\sqrt2}{2}-\frac 1 n)$, notice that $S\subseteq \displaystyle \cup_{n=0}^\infty O_n$, so this is an open cover of S. However if we fix any $N\in \mbN$ we have $\cup_{n=0}^N O_n=(-1,\frac{\sqrt 2}{2}-\frac 1 N)\cup (\frac{\sqrt 2}{2},2)\not\supseteq S,$ so this cover has no finite subcover of S.
+	\end{proof}
+	\begin{problem}
+	Suppose that K is a compact set, and $D\subseteq K$ is a closed subset. Prove that D is also compact by verifying that it has the Heine-Borel property.
+	\end{problem}
+
+	\begin{proof}
+		Since $K$ is compact we know that for any open cover of $K$ there exists a finite subcove. We wish to begin with an open cover , $\left\{O_n\right\}_{n=1}^\infty$ of $D$ and extract a finite subcover, $\left\{O_{n_k}\right\}_{k=1}^N$. i.e. if $D\subseteq \cup_{n=1}^\infty O_n$ then $D\subseteq \cup_{k=1}^N O_{n_k}$. 
+		
+		Since K is closed then $D^C$ is open, note that $K\subseteq \mbR = D \cup D^C,$ hence $\left(\cup_{n=1}^\infty O_n\right)\cup D^C$ is an open cover of K. Since K is compact there is a finite subcover, i.e. there is an $N\in \mbN$ so that $D \subseteq K\subseteq \left(\cup_{k=1}^N O_{n_k}\right)\cup D^C$. Is this a finite subcover of D? Yes, however note we added an extra set, so we haven't extracted an finite subcover yet. However the set we added, $D^C$, is the complement of $D$, so $D\cap D^C = \emptyset.$ If we take the intersection of $D$ we get $D = D \cap D \subseteq \left(\cup_{k=1}^N O_{n_k}\right)\cup D^C\cap D = \cup_{k=1}^N O_{n_k}$, so $\left\{O_{n_k}\right\}_{k=1}^N$ is the desired finite subcover and $D$ has teh Heine-Borel property.
+	\end{proof}
+	
+\end{document}
