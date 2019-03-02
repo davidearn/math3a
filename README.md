@@ -5,9 +5,8 @@ Mathematics 3A03 at McMaster University
 
 ----
 
-_**Note:**_ Niky Hristov will hold extra office hours this Friday 1 March
-2019, 11:30am-12:30pm and immediately before class on the day of the
-test, i.e., Monday 4 March 2019, 10:30-11:30am.
+_**Note:**_ Niky Hristov will hold an extra office hour immediately
+before class on the day of Test 1, i.e., Monday 4 March 2019, 10:30-11:30am.
 
 ----
 
