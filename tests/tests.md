@@ -5,6 +5,8 @@
 - Tentative date: Monday 4 March 2019
 - Tentative time: 7:00–8:30pm
 - Tentative location: [MDCL-1110](https://library.mcmaster.ca/cct/class-dir/mdcl-1110)
+- [Questions](3at1_2019.pdf)
+- [Solutions](3at1s_2019.pdf)
 
 ## 2019 Test 2
 
