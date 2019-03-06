@@ -5,11 +5,6 @@ Mathematics 3A03 at McMaster University
 
 ----
 
-_**Note:**_ Niky Hristov will hold an extra office hour immediately
-before class on the day of Test 1, i.e., Monday 4 March 2019, 10:30-11:30am.
-
-----
-
 - **Instructor:** [David Earn](http://davidearn.mcmaster.ca)
 - **Lecture times:** Monday and Wednesday @ 11:30am and Friday @ 1:30pm
 - **Lecture location:** [Chester New Hall 103](https://library.mcmaster.ca/spaces/cct) (enter "CNH 103" into the search field)
