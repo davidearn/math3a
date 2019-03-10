@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+\newcommand {\mcI} {\mathcal I}
+\newcommand {\eps} {\varepsilon}
+\newcommand {\del} {\delta}
+\newcommand {\abs}[1]{\left| #1 \right|}
+
+\newcommand {\pwii}[6] {\begin{cases} 
+		#1 & #2 \\
+		#3 & #4 \\
+		#5 & #6
+\end{cases}}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 7 Questions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{March 4/6, 2019}
+	\maketitle
+	
+	
+	\begin{problem}
+		Prove that $\displaystyle \lim_{x\rightarrow a} x^3 = a^3$ for every $a\in \mathbb R.$
+	\end{problem}
+
+	\begin{proof}
+		Goal: Given a $a\in\mbR$ and an $\eps>0$ we need to find a $\del>0$ so that if $|x-a|<\del$ then $|x^3-a^3|<\eps$. Notice that our $\del$ will depend on $\eps$, also we should somehow manipulate $|x^3-a^3|$ to isolate $|x-a|$. We can start by factoring using the fact we have a difference of cubes: \[|x^3-a^3|= |x-a||x^2-xa+a^2|.\] Using the triangle inequality we get \[|x-a||x^2-xa+a^2|\leq |x-a|(|x|^2+|ax|+|a|^2).\] We'd like to get an upper bound on this second term, for this we'd need to remember that we have a choice in $\del$, and since $|x-a|<\del$ it means we can restrict x to be near a. Let's say $\del \leq 1$, then $|x-a|<1$, i.e. $x\in (a-1,a+1)$, meaning $|x|<|a|+1$ hence \[|x^3-a^3|<|x-a|(2|a|^2+3|a|+1).\]
+		
+		Since $|x-a|<\delta$ if we choose $\delta \leq \frac{\eps}{2|a|^2+3|a|+1}$, we get $|x^3-a^3|<\eps$.
+		
+		To clean this up a bit: Given a $a\in\mbR$ and an $\eps>0$ let $\del = \min(1,\frac{\eps}{2|a|^2+3|a|+1})$, if $|x-a|<\del$ then (from the inequalities above) we have \[|x^3-a^3|<|x-a|(2|a|^2+3|a|+1)<\eps,\] and hence $\displaystyle \lim_{x\rightarrow a} x^3 = a^3$ for every $a\in \mathbb R$ by the formal definition of the limit.
+		
+		As a small remark notice that our $\del$ is a function not only of $\eps,$ but of the point $a$ as well, a choice for $\del$ at one point does not necessarily hold at another!
+	\end{proof} 
+	
+	\begin{problem}
+		Suppose that $f(x)$ and $g(x)$ are continuous on $\mbR$, with $f(x)=g(x)$ on E, a dense subset of $\mbR$. Prove that $f(x)=g(x)$ on $\mbR.$ 
+	\end{problem}
+
+	\begin{proof}
+		Recall that in a previous tutorial we showed that if a set $E$ is dense in $\mbR$ then given any $y\in \mbR$ there exists a sequence $\{y_n\}_{n=1}^\infty \subset E$ such that $\displaystyle \lim_{n\rightarrow \infty} y_n=y$. Recall also that using the sequential definition of a limit we may rewrite the condition for continuity of $f$ as given a convergent sequence of real numbers $x_n$ with limit $x$, $\displaystyle \lim_{n\rightarrow \infty} f(x_n)=f(x)$. 
+		
+		Suppose that $x\in \mbR$, then since $E$ is a dense subset we have a sequence of points $\{x_n\}_{n=1}^\infty$ in $E$ such that $\displaystyle\lim_{n\rightarrow \infty}x_n=x$, and for each $n\in\mbN$ $f(x_n)=g(x_n)$. Taking the limit on both sides we get $\displaystyle\lim_{n\rightarrow \infty}f(x_n)=\displaystyle\lim_{n\rightarrow \infty}g(x_n)$, since the two functions are continuous we have that \[f(x)=\displaystyle\lim_{n\rightarrow \infty}f(x_n)=\displaystyle\lim_{n\rightarrow \infty}g(x_n) = g(x).\]
+	\end{proof}
+	
+\end{document}
