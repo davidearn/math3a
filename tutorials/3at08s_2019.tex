@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+\newcommand {\mcI} {\mathcal I}
+\newcommand {\dlim}[2] {\displaystyle \lim_{#1 \rightarrow #2}}
+
+\newcommand {\eps} {\varepsilon}
+\newcommand {\del} {\delta}
+\newcommand {\abs}[1]{\left| #1 \right|}
+
+\newcommand {\pwii}[6] {\begin{cases} 
+		#1 & #2 \\
+		#3 & #4 \\
+		#5 & #6
+\end{cases}}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 8 Solutions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{March 11/13, 2019}
+	\maketitle
+	
+	\begin{problem}
+		Let \[f(x) = \pwii{\frac 1 q}{x=\frac p q,p,q\in\mbN, \quad\gcd(p,q)=1}{0}{x\notin \mbQ}{0}{x=0}.\] For which $y\in \mbR$ does the limit exist? Where is this function continuous?
+	\end{problem}
+
+\begin{proof}
+	The limit exists and the function is continuous when $y\in \mbR\setminus \mbQ$, and it does not otherwise. Notice: this is a solution to one of your challenge problems in class! The function is often called Thomae's function if you'd like to read more about it.
+	
+	For now let's prove that it is continuous at each irrational number and not continuous at each rational number, or at least sketch a proof.
+	
+	First we'll show that if $y\in \mbQ$ then \[\dlim x y f(x)\] does not exist. Since y is rational we have that $f(y)=\frac 1 q$ for some $q\in \mbN$. Fix $\eps = \frac 1 q$, then given any $\del>0$ notice that by the density of the irrational numbers there exists an irrational $x\in (y-\del,y+\del)$, hence $f(x)=0$, so we have an $x$ for which $\abs{x-y}<\del$ but $\abs{f(x)-f(y)}=\abs{f(y)}=\frac 1 q = \eps\geq \eps$, hence the limit does not exist.
+	
+	Now suppose that $y\notin \mbQ$, we'd like to show that \[\dlim x y f(x)=f(y)=0.\] Further suppose that $y\in [0,1]$, this wasn't given as part of the function, but we can do this by without loss of generality since for any $x\in \mbR$, we have $y\in [0,1], n\in \mbN$ with the property that $x=y+n$ and $f(y+n)=f(y)$. Given $\eps>0$ we know (by the Archimedean property) that there exists an $n\in \mbN$ such that $\frac 1 {n+1} < \eps$. Our goal here is to find an interval $(y-\del,y+\del)$ such that $\abs{f(x)-f(y)}=\abs {f(y)}\leq \frac 1 {n+1} < \eps$. Which is to say that each rational number $x$ in that interval when written as $x=\frac p q, \gcd(p,q)=1$ has the property that $n+1\leq q.$ Define the set $S=\{\frac p q: 1\leq p\leq q \leq n,\gcd(p,q)=1\}$, this set contains all rational numbers between 0 and 1 with denominator $q\leq n.$
+	The cardinality of this set is at most $|S|\leq \ds_{k=1}^n k = \frac {n(n+1)} 2,$ this is a finite set. Define $d=\inf\{|y-s|:s\in S\}$, since $S$ is a finite set and $y$ is irrational this value exists and is attained for some $s^\star \in S$ and $d>0$. Let $\del = \frac d 2$, then for each $x\in [y-\del,y+\del]$ we don't have any rational numbers with denominators $q\leq n$, hence if $|x-y|<\del$ then $\abs{f(x)-f(y)}=\abs{f(x)}\leq \frac 1 {n+1}<\eps$.
+\end{proof}
+
+	\begin{problem}
+		Which of the following are uniformly continuous:
+		
+		\begin{enumerate}
+			\item $f(x)=x^3$ with $x\in\mbR$
+			\item $f(x)=x^3$ with $x\in [0,3]$
+			\item $f(x)=\frac{1}{x}$ with $x\in(0,1)$
+			\item $f(x)=\frac 1 x$ with $x\in [1,\infty)$
+			\item $f(x)=\sin\left(\frac 1 x\right)$ with $x\in (0,1)$
+		\end{enumerate}
+	\end{problem}
+
+	\begin{proof}
+	2 and 4 are uniformly continuous. 
+	\begin{enumerate}
+		\item We'll prove this by contradiction. Suppose that given $\eps=1>0$, there is a $\del>0$ such that for any $x,y\in \mbR$ such that if $|x-y|<\del$ (in particular if $|x-y|=\frac \del 2<\del$) then $\eps>|x^3-y^3|=|x-y||x^2+xy+y^2|=\frac \del 2 |x^2+xy+y^2|$. But if $x>y\geq \frac 1 {\sqrt{\del}}$ we have $1>|x^3-y^3|=\frac \del 2 |x^2+xy+y^2| > \frac \del 2 \frac 3 \del = \frac 3 2,$ which is a contradiction.
+		\item $x^3$ is continuous, and $[0,3]$ is a compact set, hence $x^3$ is uniformly continuous on the set.		
+		\item We'll prove this by contradiction, suppose that $\frac 1 x$ is uniformly continuous, then there is a $\delta>0$ such that for any $x,y\in(0,1)$, if $|x-y|<\delta$ then $|\frac 1 x - \frac 1 y|<1$. Note in particular this means that if $|x-y|=\frac \delta 2 < \delta$ then $\frac{\delta}{2xy}=|\frac{1}{x}-\frac{1}{y}|<1$. Since $0<x<1$ then $\frac 1 y<\frac 1 {xy},$ hence $\frac{\delta}{2y}<1.$ If $\delta$ is sufficiently small then $0<\frac \delta 2<1$, but since a smaller $\del$ always works we can wlog assume $\del <2$ so we can let $y=\frac \delta 2$, in which case we get that $1<|\frac{1}{x}-\frac{1}{y}|<1$, which is a contradiction. 
+		\item Given $\epsilon>0$, let $\delta=\epsilon$. since $x,y\geq 1$, meaning $0<\frac{1}{x}\leq 1,0<\frac 1 y \leq 1$. Suppose that $|x-y|<\delta$, we have $|\frac{1}{x}-\frac 1 y|=\frac{|y-x|}{|xy|}\leq |y-x|<\delta=\epsilon$. Since this holds for any $x,y$ on $[1,\infty)$ the function is uniformly continuous.
+		\item Hint: consider the sequence of points $x_n=\frac{2}{\pi(2n+1)},y_n=\frac{1}{2\pi n}$, show that given $\delta>0$ there is an $N\in \mbN$ so that $|x_n-y_n|<\delta$ for all $n\geq N$, and that $|f(x_n)-f(y_n)|=1$. What does this tell you about the uniform continuity of $\sin(1/x)$ on the specified interval?
+	\end{enumerate}
+\end{proof}
+
+
+
+\begin{problem}
+	Let $f:\mbR \to \mbR$ be a continuous function with the property that 
+	\begin{equation}
+	\label{limits}
+	\lim_{x\to -\infty} f(x) = \lim_{x\to \infty} f(x) = 0.
+	\end{equation}
+	Show that $f$ has either an absolute maximum or an absolute minimum but not necessary both.
+\end{problem}
+
+
+
+\begin{proof}
+	
+	Next week!
+	
+	\iffalse
+	We assume that the function $f$ is not identically zero on the real line, otherwise both absolute maximum and minimum of $f$ is zero.
+	
+	Since $f$ is not identically zero on the real line, there exists a point $p \in \mathbb{R}$ satisfying $f(p) \neq 0$. Set $\epsilon:= |f(p)|>0$. 
+	
+	Consider the set $S:=\{x: |f(x)| \geq \epsilon \}$. Note that the set $S$ is bounded from below. Otherwise, there exists a sequence $\{x_n\} \subseteq S$ such that $x_n \to -\infty$ and $f(x_n) \to \epsilon$, which contradict to the condition (\ref{limits}) since $\epsilon>0$. Similarly, we prove that $S$ is also bounded from above. Therefore, both infimum and supremum of $S$ exist. 
+	
+	Consider any accumulation point of the set $S$, i.e. consider a sequence 
+	$\{x_n\} \subseteq S$ such that $x_n \to x \in \mbR$. Since $f$ is continuous, $f(x_n) \to f(x)$. Note that for each $n \in \mbN$, $f(x_n) \geq \epsilon$, and so $f(x) \geq \epsilon$ also. Then, $x \in S$, which means that the set $S$ is closed. Therefore, inf$(S) \in S$ and sup$(S) \in S$.
+	Set $c_1:= {\rm inf}(S)$ and $c_2:= {\rm sup}(S)$.
+	
+	By the above construction, 
+	$$
+	|f(x)|<\epsilon = |f(c_1)| \quad {\rm for} \ {\rm all} \quad x<c_1, \quad {\rm and}
+	$$
+	$$
+	|f(x)|<\epsilon = |f(c_2)| \quad {\rm for} \ {\rm all} \quad x>c_2.
+	$$
+	Therefore, $f(c_1)$ is either an absolute maximum or an absolute minimum of $f$ on the interval $(-\infty, c_1]$, and $f(c_2)$ is either an absolute maximum or an absolute minimum of $f$ on the interval 
+	$[c_2, +\infty)$.
+	
+	If $c_1 = c_2$, then $f(c_1)$ is an absolute extremum of $f$ on $\mbR$. If $c_1 \neq c_2$, then the interval $[c_1,c_2]$ is nonempty, and by Extreme Value Theorem, there exist the absolute maximum $M$ and the absolute minimum $m$ of $f$ on the interval $[c_1, c_2]$. 
+	If max$\big(f(c_1),f(c_2)\big)>0$, then max$\big(f(c_1),f(c_2), M\big)$ is an absolute maximum of $f$ on $\mbR$. If min$\big(f(c_1),f(c_2)\big)<0$, then min$\big(f(c_1),f(c_2), m\big)$ is an absolute minimum of $f$ on $\mbR$. If 
+	$$
+	{\rm max} \big(f(c_1),f(c_2)\big)= {\rm min} \big(f(c_1),f(c_2)\big)=0,
+	$$ then max$\big(f(c_1),f(c_2), M\big)$ is an absolute max of $f$ on $\mbR$ and min$\big(f(c_1),f(c_2), m\big)$ is an absolute min of $f$ on $\mbR$.
+	
+	There exist cases when there is no absolute max or absolute min. For example, the function $f(x) = \exp(-x^2)$ does not have absolute min, whereas the function $f(x) = -\exp(-x^2)$ does not have absolute max.
+	
+	\fi
+\end{proof}
+
+
+	\begin{problem}
+	Let $f$ be a continuous, one-to-one function defined on the interval $[a,b]$ with $f(a)<f(b)$. Show that, for all $x,y \in [a,b]$, if $x<y$ then $f(x)<f(y)$.
+\end{problem}
+	
+	
+	\begin{proof}
+		Next week!
+		\iffalse
+		Assume, by contradiction, that there exist $x,y \in [a,b]$ such that $x<y$ and $f(x)>f(y)$. Note that $a \leq x <y \leq b$, and so $a\neq y$. 
+		We divide the proof into three cases. 
+		
+		{\bf Case 1:} $f(y) = f(a)$. Then, since $a\neq y$, we get a contradiction to the injectivity of $f$.
+		
+		{\bf Case 2:} $f(y) < f(a)$. We consider two intervals $(a,y)$ and $(y,b)$. The second interval is nonempty since $f(y)<f(a)<f(b)$, and so $y < b$. Then, for the interval $(a,y)$, choose any $d \in (f(y), f(a))$. By Intermediate Value Theorem, there exist some $c_1 \in (a,y)$ such that $f(c_1) = d$. For the interval $(y,b)$, since $f(y)<f(a)<f(b)$ holds, 
+		our previously chosen $d \in (f(y), f(b))$. Then, by Intermediate Value Theorem, there exist some $c_2 \in (y,b)$ such that $f(c_2) = d$. Since $(a,y) \cap (y,b) = \emptyset$, $c_1 \neq c_2$. Therefore, $f(c_1) = d = f(c_2)$ contradicts to the injectivity of $f$.
+		
+		{\bf Case 3:} $f(y) > f(a)$. We consider two intervals $(a,x)$ and $(x,y)$. The first interval is nonempty since $f(a)<f(y)<f(x)$, and so $a < x$. Then, for the interval $(a,x)$, choose any $d \in (f(y), f(x)) \subset (f(a), f(x))$. By Intermediate Value Theorem, there exist some $c_1 \in (a,x)$ such that $f(c_1) = d$. For the interval $(x,y)$, our previously chosen 
+		$d \in (f(y), f(x))$. Then, by Intermediate Value Theorem, there exist some $c_2 \in (x,y)$ such that $f(c_2) = d$. Since $(a,x) \cap (x,y) = \emptyset$, $c_1 \neq c_2$. Therefore, $f(c_1) = d = f(c_2)$ contradicts to the injectivity of $f$.
+		
+		In each case we have a contradiction. Therefore, for all $x,y \in [a,b]$, if $x<y$ then $f(x)<f(y)$.
+		
+		\fi
+	\end{proof}
+\end{document}
