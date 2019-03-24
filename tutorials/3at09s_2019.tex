@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+\newcommand {\mcI} {\mathcal I}
+
+\newcommand {\pwii}[6] {\begin{cases} 
+		#1 & #2 \\
+		#3 & #4 \\
+		#5 & #6
+\end{cases}}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 9 Solutions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{March 18/20, 2019}
+	\maketitle
+	
+
+
+\begin{problem}
+	Let $f:\mbR \to \mbR$ be a continuous function with the property that 
+	\begin{equation}
+	\label{limits}
+	\lim_{x\to -\infty} f(x) = \lim_{x\to \infty} f(x) = 0.
+	\end{equation}
+	Show that $f$ has either an absolute maximum or an absolute minimum but not necessary both.
+\end{problem}
+
+
+
+\begin{proof}
+	
+	We assume that the function $f$ is not identically zero on the real line, otherwise both absolute maximum and minimum of $f$ is zero.
+	
+	Since $f$ is not identically zero on the real line, there exists a point $p \in \mathbb{R}$ satisfying $f(p) \neq 0$. Set $\epsilon:= |f(p)|>0$. 
+	
+	Consider the set $S:=\{x: |f(x)| \geq \epsilon \}$. Note that the set $S$ is bounded from below. Otherwise, there exists a sequence $\{x_n\} \subseteq S$ such that $x_n \to -\infty$ and $f(x_n) \to \epsilon$, which contradict to the condition (\ref{limits}) since $\epsilon>0$. Similarly, we prove that $S$ is also bounded from above. Therefore, both infimum and supremum of $S$ exist. 
+	
+	Consider any accumulation point of the set $S$, i.e. consider a sequence 
+	$\{x_n\} \subseteq S$ such that $x_n \to x \in \mbR$. Since $f$ is continuous, $f(x_n) \to f(x)$. Note that for each $n \in \mbN$, $f(x_n) \geq \epsilon$, and so $f(x) \geq \epsilon$ also. Then, $x \in S$, which means that the set $S$ is closed. Therefore, inf$(S) \in S$ and sup$(S) \in S$.
+	Set $c_1:= {\rm inf}(S)$ and $c_2:= {\rm sup}(S)$.
+	
+	By the above construction, 
+	$$
+	|f(x)|<\epsilon = |f(c_1)| \quad {\rm for} \ {\rm all} \quad x<c_1, \quad {\rm and}
+	$$
+	$$
+	|f(x)|<\epsilon = |f(c_2)| \quad {\rm for} \ {\rm all} \quad x>c_2.
+	$$
+	Therefore, $f(c_1)$ is either an absolute maximum or an absolute minimum of $f$ on the interval $(-\infty, c_1]$, and $f(c_2)$ is either an absolute maximum or an absolute minimum of $f$ on the interval 
+	$[c_2, +\infty)$.
+	
+	If $c_1 = c_2$, then $f(c_1)$ is an absolute extremum of $f$ on $\mbR$. If $c_1 \neq c_2$, then the interval $[c_1,c_2]$ is nonempty, and by Extreme Value Theorem, there exist the absolute maximum $M$ and the absolute minimum $m$ of $f$ on the interval $[c_1, c_2]$. 
+	If max$\big(f(c_1),f(c_2)\big)>0$, then max$\big(f(c_1),f(c_2), M\big)$ is an absolute maximum of $f$ on $\mbR$. If min$\big(f(c_1),f(c_2)\big)<0$, then min$\big(f(c_1),f(c_2), m\big)$ is an absolute minimum of $f$ on $\mbR$. If 
+	$$
+	{\rm max} \big(f(c_1),f(c_2)\big)= {\rm min} \big(f(c_1),f(c_2)\big)=0,
+	$$ then max$\big(f(c_1),f(c_2), M\big)$ is an absolute max of $f$ on $\mbR$ and min$\big(f(c_1),f(c_2), m\big)$ is an absolute min of $f$ on $\mbR$.
+	
+	There exist cases when there is no absolute max or absolute min. For example, the function $f(x) = \exp(-x^2)$ does not have absolute min, whereas the function $f(x) = -\exp(-x^2)$ does not have absolute max.
+
+\end{proof}
+
+
+\begin{problem}
+	Let $f$ be a continuous, one-to-one function defined on the interval $[a,b]$ with $f(a)<f(b)$. Show that, for all $x,y \in [a,b]$, if $x<y$ then $f(x)<f(y)$.
+\end{problem}
+
+
+\begin{proof}
+	Assume, by contradiction, that there exist $x,y \in [a,b]$ such that $x<y$ and $f(x)>f(y)$. Note that $a \leq x <y \leq b$, and so $a\neq y$. 
+	We divide the proof into three cases. 
+	
+	{\bf Case 1:} $f(y) = f(a)$. Then, since $a\neq y$, we get a contradiction to the injectivity of $f$.
+	
+	{\bf Case 2:} $f(y) < f(a)$. We consider two intervals $(a,y)$ and $(y,b)$. The second interval is nonempty since $f(y)<f(a)<f(b)$, and so $y < b$. Then, for the interval $(a,y)$, choose any $d \in (f(y), f(a))$. By Intermediate Value Theorem, there exist some $c_1 \in (a,y)$ such that $f(c_1) = d$. For the interval $(y,b)$, since $f(y)<f(a)<f(b)$ holds, 
+	our previously chosen $d \in (f(y), f(b))$. Then, by Intermediate Value Theorem, there exist some $c_2 \in (y,b)$ such that $f(c_2) = d$. Since $(a,y) \cap (y,b) = \emptyset$, $c_1 \neq c_2$. Therefore, $f(c_1) = d = f(c_2)$ contradicts to the injectivity of $f$.
+	
+	{\bf Case 3:} $f(y) > f(a)$. We consider two intervals $(a,x)$ and $(x,y)$. The first interval is nonempty since $f(a)<f(y)<f(x)$, and so $a < x$. Then, for the interval $(a,x)$, choose any $d \in (f(y), f(x)) \subset (f(a), f(x))$. By Intermediate Value Theorem, there exist some $c_1 \in (a,x)$ such that $f(c_1) = d$. For the interval $(x,y)$, our previously chosen 
+	$d \in (f(y), f(x))$. Then, by Intermediate Value Theorem, there exist some $c_2 \in (x,y)$ such that $f(c_2) = d$. Since $(a,x) \cap (x,y) = \emptyset$, $c_1 \neq c_2$. Therefore, $f(c_1) = d = f(c_2)$ contradicts to the injectivity of $f$.
+	
+	In each case we have a contradiction. Therefore, for all $x,y \in [a,b]$, if $x<y$ then $f(x)<f(y)$.
+
+\end{proof}
+
+
+\begin{problem}
+	Let $f:[0,1] \to \mbR$ be a continuous function that is differentiable on 
+	$(0,1)$ and with $f(0)=0$ and $f(1)=1$. Show there must exist distinct numbers $\xi_1$ and $\xi_2$ in that interval such that 
+	$$
+	f'(\xi_1)f'(\xi_2)=1.
+	$$
+\end{problem}
+
+
+\begin{proof}
+	By Mean Value Theorem for the interval $[0,1]$, there exist some $a \in (0,1)$ such that 
+	$f'(a) = \frac{f(1)-f(0)}{1-0}=1$. We don't know the value of $f(a)$, so we divide the proof into three cases.
+	
+	{\bf Case 1:} $f(a)=a>0$. Then, by Mean Value Theorem for $[0,a]$, there exists some $b \in (0,a)$ such that $f'(b) = \frac{f(a)-f(0)}{a-0}=\frac{f(a)}{a} = 1$. Since $a \neq b$, we got the desired $f'(a)f'(b) =1$.
+	
+	{\bf Case 2:} $f(a)>a>0$. Then, by Mean Value Theorem for the intervals 
+	$[0, a]$ and $[a,1]$, there exist $b \in (0,a)$ and $c \in (a,1)$ such that 
+	$$
+	f'(b) =\frac{f(a)-f(0)}{a-0}=\frac{f(a)}{a}>1 \quad {\rm and} \quad
+	f'(c) =\frac{1-f(a)}{1-a}<1,
+	$$
+	where the latter inequalities are obtained due to the assumption $f(a)>a$. Then, we can write $f'(b) = 1+p$ and $f'(c) = 1-q$ for some $p>0$ and $q>0$. Set $\delta:=$ min$(p,q)>0$. Hence, $(1,1+\delta) \subseteq (1, 1+p) = (f'(a), f'(b))$ and $(1-\delta,1) \subseteq (1-q, 1) = (f'(c), f'(a))$. 
+	
+	By Darboux's Theorem for $(b,a)$, choose any $d \in (1,1+\delta) \subseteq(f'(a), f'(b))$, then there exist some $\xi_1 \in (b,a)$ such that 
+	$f'(\xi_1)=d$. 
+	
+	Since $1<d<1+\delta$, we have $1> \frac{1}{d} > \frac{1}{1+\delta} > 1-\delta$, where the last inequality comes from $1>1-\delta^2$. Therefore, we get that $\frac{1}{d} \in (1-\delta, 1) \subseteq (f'(c), f'(a))$. By Darboux's Theorem for $(a,c)$, there exists some $\xi_2 \in (a,c)$ such that 
+	$f'(\xi_2) = \frac{1}{d}$. 
+	
+	Since $(b,a) \cap (a,c) = \emptyset$, we have $\xi_1 \neq \xi_2$ and  
+	$
+	f'(\xi_1)f'(\xi_2)= d \times \frac{1}{d} = 1.
+	$
+	
+	{\bf Case 3:} $f(a)<a$. Proof is similar to the Case 2.
+\end{proof}
+
+	
+\end{document}
