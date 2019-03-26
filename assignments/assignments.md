@@ -42,6 +42,7 @@ _You are required to have a cover sheet on your assignments. You can use the fol
 ## 2019 Assignment 5
 
 - [Question sheet](./3aa5_2019.pdf)
+- [Solutions](./3aa5s_2019.pdf)
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Monday 25 March 2019, 11:25am
 
