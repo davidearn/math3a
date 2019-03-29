@@ -39,10 +39,9 @@
 | 11 | [30](3al30_2019.pdf) | Mon 25 Mar 2019 | Integration V | Chapter 8 |
 |  | [31](3al31_2019.pdf) | Wed 27 Mar 2019 | Sequences of Functions | Chapter 9 |
 |  | [32](3al32_2019.pdf) | Fri 29 Mar 2019 | Sequences of Functions II | Chapter 10 |
-| 12 | [33](3al33_2019.pdf) | Mon 1 Apr 2019 | Pre-test Q&A | Test 2 at 7:00pm |
-|  | [34](3al34_2019.pdf) | Wed 3 Apr 2019 | Sequences of Functions III | Chapter 10 |
-|  | [35](3al35_2019.pdf) | Tue 5 Mar 2019 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2019.pdf) |
-| 13 | [36](3al36_2019.pdf) | Mon 8 Apr 2019 |  |  |
-|  | [37](3al37_2019.pdf) | Wed 10 Apr 2019 | Pre-exam Q&A |  |
+| 12 | [33](3al33_2019.pdf) | Mon 1 Apr 2019 | Pre-test Q&A<br>Sequences of Functions III | Test 2 at 7:00pm |
+|  | [34](3al34_2019.pdf) | Wed 3 Apr 2019 | Sequences of Functions IV | Chapter 10 |
+|  | [35](3al35_2019.pdf) | Fri 5 Apr 2019 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2019.pdf) |
+| 13 | [36](3al36_2019.pdf) | Mon 8 Apr 2019 | Pre-exam Q&A |  |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
