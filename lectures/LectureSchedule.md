@@ -40,7 +40,7 @@
 |  | [31](3al31_2019.pdf) | Wed 27 Mar 2019 | Sequences of Functions | Chapter 9 |
 |  | [32](3al32_2019.pdf) | Fri 29 Mar 2019 | Sequences of Functions II | Chapter 10 |
 | 12 | [33](3al33_2019.pdf) | Mon 1 Apr 2019 | Pre-test Q&A<br>Sequences of Functions III | Test 2 at 7:00pm |
-|  | [34](3al34_2019.pdf) | Wed 3 Apr 2019 | Sequences of Functions IV | Chapter 10 |
+|  | [34](3al34_2019.pdf) | Wed 3 Apr 2019 | What is &#8477;? |  |
 |  | [35](3al35_2019.pdf) | Fri 5 Apr 2019 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2019.pdf) |
 | 13 | [36](3al36_2019.pdf) | Mon 8 Apr 2019 | Pre-exam Q&A |  |
 
