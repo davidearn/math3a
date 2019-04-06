@@ -1,0 +1,213 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+\newcommand {\mcI} {\mathcal I}
+
+\newcommand {\pwii}[6] {\begin{cases} 
+		#1 & #2 \\
+		#3 & #4 \\
+		#5 & #6
+\end{cases}}
+
+\newcommand {\pwi}[4] {\begin{cases} 
+		#1 & #2 \\
+		#3 & #4
+\end{cases}}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\del}{\delta}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 11 Solutions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{April 1/3, 2019}
+	\maketitle
+	
+\begin{problem}
+	Let \[f(x) = \pwi{x^2}{x\in \mbQ}{0}{x\notin \mbQ}.\] Prove that $f(x)$ is not integrable on $[0,1]$.
+\end{problem}
+
+\begin{proof}
+	Idea: clearly the lower sums are going to always be zero as in any interval we can find an irrational number (by density) where the minimum is achieved. The upper sums will have an infimum greater than 0, this will follow from showing that on any interval we can find a rational number, and the supremum (needed for the upper sums) will end up being on the right endpoint of each interval in the partition. This is going to look like the upper sum for the function $f(x)=x^2$, which of course has an integral of $\frac 1 3 \neq 0$ on the interval.
+	
+	Let's do the computations, let P be an arbitrary partition, then 
+	
+	\[
+	L(f,P) = \sum_{i=1}^n m_i (x_i-x_{i-1}).
+	\]
+	
+	Now 
+	
+	\[
+	m_i = \inf \{f(x):x\in [x_{i-1},x_i]\},
+	\]
+	
+	Since for any such interval we can always find an irrational number by density, and the function is positive otherwise on $[0,1]$, then the infimum is 0, so that $m_i=0$.
+	
+	For the upper sums we have for an arbitrary partition that
+	
+	\[
+	U(f,P) = \sum_{i=1}^n M_i (x_i-x_{i-1}).
+	\]
+	
+	We need to compute $M_{i}=\sup\{f(x)|x\in[x_{i-1},x_i]\}$, notice that we can always find a rational number on such an interval, so we should expect it to be a number greater than 0, but what is it exactly? Well we know that if $x\in \mathbb Q$ then the function is just $f(x)=x^2$ so we can rewrite the above as $\sup\{f(x)|x\in[x_{i-1},x_i]\}=\sup\{x^2|x\in[x_{i-1},x_i]\cap \mathbb Q\}$. What is the supremum of this set? Recall that a set does not need to contain its supremum, in fact the sup here is exactly $M_i=\sup\{x^2|x\in[x_{i-1},x_i]\cap \mathbb Q\}= x_i^2$ (note that here we use that $x^2$ is monotonic increasing for $x\geq 0$). This makes the upper sum,
+	
+	\[
+	U(f,P) =\sum_{i=1}^n x^2_i(x_i-x_{i-1}).
+	\]
+	
+	What does this sum look like? Well it looks like we are taking the max of the function $f(x)=x^2$ on intervals of the form $[x_{i-1},x_i]$. So then \[U(f,P)=U(x^2,P)\],
+	
+	and 
+	
+	\[\inf\{U(f,P)|\text{P a partition}\}=\inf \{U(x^2,P)|\text{P a partition}\}.\] 
+	
+	But since $f(x)=x^2$ is integrable on $[0,1]$ we get that,
+	
+	\[\inf \{U(x^2,P)|\text{P a partition}\}=\int_0^1 x^2 dx=\frac 1 3.\]
+	
+	This means that $\sup\{L(f,P)\}=0\neq \frac 1 3 =  \inf\{U(f,P)\}$, so that $f(x)$ is not integrable on $[0,1]$.
+\end{proof}
+
+\begin{problem}
+	Consider the series $\sum_{k=1}^\infty \frac{1}{x^2+k^2}$ on $[-1,1]$. Show that:
+	\begin{enumerate}[(a)]
+		\item the series converges to a continuous function $f$ on $[-1,1]$; 
+		\item $f$ is differentiable. 
+	\end{enumerate}
+\end{problem}
+
+\begin{proof}
+	{\bf Part (a):} We use the Weierstrass $M$-test. First, note that for every 
+	$k \in \mbN$
+	$$
+	\frac{1}{x^2+k^2} \leq \frac{1}{k^2} \quad \forall x \in [-1,1].
+	$$
+	The series $\sum_{k=1}^\infty \frac{1}{k^2}$ are known to converge, so-called convergent $p$-series. Therefore, by Weierstrass $M$-test theorem, the convergence of $\sum_{k=1}^\infty \frac{1}{k^2}$ implies that $\sum_{k=1}^\infty \frac{1}{x^2+k^2}$ converges uniformly on $[-1,1]$. 
+	
+	Let $f = \sum_{k=1}^\infty \frac{1}{x^2+k^2}$. It remains to prove that $f$ is continuous on $[-1,1]$. Note that for every $k \in \mbN$ the function $f_k =  \frac{1}{x^2+k^2}$ is continuous on $[-1,1]$. Therefore, since 
+	$\sum_{k=1}^\infty f_k$ converges uniformly to $f$, $f$ is continuous.
+	
+	{\bf Part (b):} Here, we use the Corollary about the ``differentiability of series'' given in the Lecture 33, so we need to verify the following conditions:\\
+	$\bullet$ $f_k$ is differentiable and $f_k'$ is continuous for each $k$;\\
+	$\bullet$ the series $\sum_{k=1}^\infty f_k'(x)$ converges uniformly on $[-1,1]$; \\
+	$\bullet$ the series $\sum_{k=1}^\infty f_k(x)$ converges pointwise to a function $f$ on $[-1,1]$.
+	
+	Clearly, $f_k$ is differentiable and 
+	$$
+	f_k'(x) = \left(\frac{1}{x^2+k^2} \right)' = -\frac{2x}{(x^2+k^2)^2}
+	$$
+	is continuous for each $k \in \mbN$. Moreover, since $|x| \leq x^2+k^2$ for all $x \in [-1,1]$ and $k \in \mbN$, 
+	$$
+	|f_k'(x)| = \left| -\frac{2x}{(x^2+k^2)^2}\right| \leq \frac{2(x^2+k^2)}{(x^2+k^2)^2} \leq \frac{2}{x^2+k^2} \leq \frac{2}{k^2}.
+	$$
+	Therefore, using the Weierstrass $M$-test Theorem again, the convergence of $\sum_{k=1}^\infty \frac{2}{k^2}$ implies that $\sum_{k=1}^\infty f_k'(x)$ converges uniformly on $[-1,1]$. Finally, using the Part (a) we know that the series $\sum_{k=1}^\infty f_k$ converges uniformly (and so pointwise) to a function $f$.  All the required conditions are verified, therefore, $f$ is differentiable.
+\end{proof}
+
+\begin{problem}
+	Let $f$ be a function that is uniformly continuous on $\mbR$ and, for $n \geq 1$, let $f_n(x) = f(x+\frac{1}{n})$. Show that $\{f_n\}$ converges uniformly to $f$ on $\mbR$.
+\end{problem}
+
+\begin{proof}
+	Given an arbitrary $\epsilon >0$. We need to find $N \in \mbN$ such that, for every natural $n \geq N$, 
+	$|f_n(x)-f(x)|<\epsilon$ for all $x \in \mbR$. 
+	
+	Since the function $f$ is uniformly continuous on $\mbR$, there exists some $\delta>0$ such that, 
+	for all $x,y \in \mbR$, 
+	\begin{equation}
+	\label{eq1}
+	|x-y|<\delta \implies |f(x)-f(y)|<\epsilon.
+	\end{equation}
+	Choose $N \in \mbN$ such that $N > 1/\delta$. Then, for every natural 
+	$n \geq N$ and any $x \in \mbR$, we have that 
+	$|\left( x+\frac{1}{n}\right) -x| = \frac{1}{n}<\delta$, and, using
+	(\ref{eq1}), we get
+	$$
+	|f(x+\frac{1}{n}) - f(x)| = |f_n(x) - f(x)|<\epsilon.
+	$$
+\end{proof}
+
+\begin{problem}
+	Let $\{f_n\}$ be a sequence of continuous functions on $[a,b]$ that converges uniformly to the function $f$ on $[a,b]$. 
+	\begin{enumerate}[(a)]
+		\item Show that there is some $K >0$ such that  for every $n \in \mbN$ $|f_n(x)| < K$ for all $x \in [a,b]$.
+		\item Show that the assertion (a) might fail if the convergence is not uniform, but pointwise.
+	\end{enumerate}
+\end{problem}
+
+\begin{proof}
+	{\bf Part (a):} 
+	Since each $f_n$ is continuous and $f_n \to f$ uniformly on $[a,b]$, the function $f$ is also continuous on $[a,b]$, and, therefore, is bounded. 
+	Let $M>0$ be a bound of $f$ on $[a,b]$, that is $|f(x)|<M$ for all $x \in [a,b]$.
+	Let $\epsilon = 1$ (in fact, any choice of $\epsilon$ would work). 
+	By the uniform convergence of $f_n$ to $f$, there exists some $N \in \mbN$ such that for every $x \in [a,b]$ 
+	\begin{equation}
+	\label{eq2}
+	|f_n(x)-f(x)|<1 \quad \forall n \geq N.
+	\end{equation}
+	Using the triangle inequality, (\ref{eq2}) implies that 
+	$$
+	|f_n(x)| - |f(x)| \leq |f_n(x)-f(x)|<1 \quad \forall n \geq N
+	$$
+	which is equivalent to 
+	$$
+	|f_n(x)|<|f(x)|+1 <M+1 \quad \forall n \geq N,
+	$$
+	where $M$ was defined above. Therefore, for all $n \geq N$, 
+	$|f_n(x)|<M+1$ for all $x \in [a,b]$. 
+	
+	We need to find the bound which will work for every $n \in \mbN$ (that is, including $n<N$). For that purpose, for every natural $n<N$, let $M_n>0$ be such that $|f_n(x)|<M_n$ for all 
+	$x \in [a,b]$. Such bound $M_n$ exists since all $f_n$ are continuous on a closed interval $[a,b]$. Set 
+	$K=$max$(M_1,...,M_{N-1}, M+1)$. Then, for every $n\in \mbN$, 
+	$|f_n(x)| < K$ for all $x \in [a,b]$.
+	
+	{\bf Part (b):} 
+	For each $n \in \mbN$, consider the function $f_n(x)$ as in
+	$$
+	f_n(x) = \begin{cases}
+	0 \quad \quad {\rm if} \quad  x \leq 0 \\
+	4n^2x \quad {\rm if} \quad 0<x\leq 1/2n \\
+	-4n^2x+4n \quad {\rm if} \quad 1/2n<x \leq 1/n \\
+	0 \quad \quad {\rm if} \quad x>1/n
+	\end{cases}
+	$$
+	Note that $f_n \to 0$ pointwise. Each $f_n$ is bounded sharply by $M_n = 2n$, and so, if $n \to \infty$ then the sequence of bounds $M_n \to \infty$.
+\end{proof}
+
+	
+\end{document}

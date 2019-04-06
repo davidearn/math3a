@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm,thmtools}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+\newcommand{\batsym}{\begin{tikzpicture}[scale=0.05]
+	\draw[fill,black]   (-0.25,1.48) .. controls (-0.1,1.5) and (0.1,1.5) .. (0.25,1.48) -- (0.35,1.92) .. controls (0.425,1.8) and (0.41,1.3) .. (0.45,1.2) .. controls (0.6,1.05) and (1.96,1.05) .. (1.98,2.08) -- (5.93,2.08) .. controls (4.2,1.45) and (4,0.3) .. (4.2,-0.28) .. controls (2.4,-0.09) and (0.4,-0.5) .. (0,-2.052) .. controls (-0.4,-0.5) and (-2.4,-0.09) .. (-4.2,-0.28) .. controls (-4,0.3) and (-4.2,1.45) .. (-5.93,2.08) -- (-1.98,2.08) .. controls (-1.96,1.05) and (-0.6,1.05) .. (-0.45,1.2) .. controls (-0.41,1.3) and (-0.425,1.8) .. (-0.35,1.92) -- (-0.25,1.48);
+	\end{tikzpicture}}
+\newcommand{\QEB}{\begin{flushright}\batsym\end{flushright}}
+
+
+
+\def\bold{\textbf}
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}
+\theoremstyle{remark}
+\newtheorem*{idea}{Idea}
+
+\renewcommand*{\proofname}{Solution}
+
+
+\renewcommand{\qedsymbol}{$\batsym$}
+
+\newcommand {\ds}{\displaystyle\sum}
+\newcommand {\nnR} {\mathbb{R}_{\geq 0}}
+
+\newcommand {\Mtt}[4] {\begin{bmatrix}#1 & #2\\ #3 & #4\end{bmatrix}}
+\newcommand {\Ctt}[2] {\Mtt {#1}{-#2}{#2}{#1}}
+\newcommand {\mbR} {\mathbb R}
+\newcommand {\mcC} {\mathcal C}
+\newcommand {\mbZ} {\mathbb Z}
+\newcommand {\mbN} {\mathbb N}
+\newcommand {\mbQ} {\mathbb Q}
+\newcommand {\RnQ} {\mathbb R \setminus \mathbb Q}
+\newcommand {\mcI} {\mathcal I}
+
+\newcommand {\pwii}[6] {\begin{cases} 
+		#1 & #2 \\
+		#3 & #4 \\
+		#5 & #6
+\end{cases}}
+
+\newcommand {\pwi}[4] {\begin{cases} 
+		#1 & #2 \\
+		#3 & #4
+\end{cases}}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\del}{\delta}
+
+\begin{document}
+	\title{Math 3A03 - Tutorial 10 Solutions - Winter 2019}
+	\author{Nikolay Hristov}
+	\date{March 25/27, 2019}
+	\maketitle
+	
+\begin{problem}Let
+	\[
+	f(x) = \begin{cases}
+	x &\text{if $0\leq x\leq 1$}\\
+	x-2 &\text{if $1<x \leq 2$}
+	\end{cases}
+	\]
+	
+	$P_n=\{\frac i n\}_{i=0}^{2n}= \{0,\frac 1 2, \frac 2 n, ... ,\frac i n, ...\frac {2n-1} n, 2\}$. 
+	
+	(a) Compute $U(f,P_n)$ and $L(f,P_n)$, you may use the fact that $\sum_{i=1}^n i = \frac{n(n+1)}{2}$, then show that given $\eps>0$ there is a $P_N$ such that $U(f,P_N)-L(f,P_N)<\eps$. Conclude that f is integrable on $[0,2]$.
+	
+	(b) Modify the above argument slightly, and conclude $f$ is integrable directly from the definition. i.e. What can you say about $\sup L(f,P)$ and $\inf U(f,P)$?
+\end{problem}
+
+\begin{proof}
+	\begin{enumerate}[a.]
+	\item Let's compute the upper and lower sums, we can choose an easy family of partitions to deal with, say $P_n=\{\frac i n\}_{i=0}^{2n}$.
+	
+	\[
+	L(f,P_n) = \sum_{i=1}^{2n} m_i (x_i-x_{i-1})=\sum_{i=1}^{2n} m_i (\frac i n - \frac{i-1}{n})
+	\]
+	
+	Notice that $m_i=\frac{i-1}{n}$ when $i\leq n$, and $m_i=\frac{i-1}{n}-2$ otherwise, since the function reaches a minimum on the left side of $[\frac{i-1}{n},\frac i n]$.
+	
+	Then
+	
+	\begin{align*}
+	L(f,P_n) &= \sum_{i=1}^{n} \frac{i-1}{n} (\frac i n - \frac{i-1}{n}) + \sum_{i=n+1}^{2n} (\frac{i-1}{n} -2) (\frac i n - \frac{i-1}{n})\\
+	&= \sum_{i=1}^{n} (\frac{i-1}{n})\frac 1 n +  \sum_{i=n+1}^{2n} (\frac{i-1}{n}-2)\frac 1 n\\
+	&= \frac{n(n+1)}{2n^2}-\frac 1 n + \sum_{j=1}^{n} (\frac{j+n}{n}-\frac 1 n -2)\frac 1 n\\
+	&=\frac 1 2 +\frac 1 {2n} - \frac 1 n + \frac{n(n+1)}{2n^2}-\frac 1 n -1\\
+	&=-\frac 1 {2n}
+	\end{align*}
+	
+	We used the fact that $\ds_{i=1}^n i = \frac{n(n+1)}{2}$, and simple algebra for the remainder of the problem. Similarly we can get that $U(f,P_n)=\frac 1 n$
+	
+	This will give us that $U(f,P_n)-L(f,P_n)=\frac 2 n$, which can be made as small as we like for a sufficiently large n then from a proposition from class f(x) is integrable on $[0,2]$.
+	
+	\item Notice that $\displaystyle\inf_{n\in \mbN} U(f,P_n)=0$ and similarly $\displaystyle\sup_{n\in \mbN} L(f,P_n)=0$. From the definitions of the infimum and supremum, $0 = \displaystyle\inf_{n\in \mbN} U(f,P_n)\geq \displaystyle\inf_{P} U(f,P)$ and $0=\displaystyle\sup_{n\in \mbN} L(f,P_n)\leq \sup L(f,P)$. But since on any pair of partitions the upper sum is bigger than or equal to the lower sum we get \[0\geq \inf_{P} U(f,P)\geq \sup L(f,P) \geq 0,\]
+	
+	hence $\inf_{P} U(f,P)= \sup L(f,P) = 0$ and we can conclude that f is integrable and $\int_0^2 f dx = 0$.
+	
+	
+\end{enumerate}
+\end{proof}
+
+\begin{problem}
+	\begin{enumerate}[a.]
+		\item Let $f$ be continuous on $(a,b)$ and bounded on $[a,b]$. Prove that $f$ is integrable on $[a,b]$.
+		\item Let $f$ be piecewise continuous on $[a,b]$ (meaning there are k points $a=x_1<x_2<...<x_j<...<x_k=b$ with $f$ continuous on $(x_j,x_{j+1})$ and $f$ bounded on $[x_j,x_{j+1}]$, which is to say f makes finitely many finite jumps), prove that $f$ is integrable on $[a,b]$.
+	\end{enumerate}
+\end{problem}
+\begin{proof}
+	
+	\begin{enumerate}[a.]
+		\item We'll show that given $\epsilon>0$ there is a partition P of $[a,b]$ with the property that $U(f,P)-L(f,P)<\epsilon$. The strategy here will be to break the partition into three pieces, the first is the interval $[t_0,t_1]$, the second will be the union of the middle $N-2$ intervals, $[t_1,t_{N-1}]$, and then the final end piece $[t_{N-1},t_N]$. For the middle interval the function is then continuous on a closed and bounded set, hence uniformly continuous. On the first and last interval, which could be made as small as we like, the function is bounded.
+		
+		Let $m,M$ be the lower and upper bound of $f$ on the interval $[a,b]$. This means that $m\leq m_1 \leq f(x) \leq M_1 \leq M$ for $x\in [t_0,t_1]$ and $x\in [t_{N-1},t_N]$. Choose a partition such that $t_1-t_0\leq \frac{\epsilon}{4(M-m)}$ and $t_N-t_{N-1}\leq \frac{\epsilon}{4(M-m)}$. 
+		
+		Choose the remaining subintervals of the partition so that $t_i-t_{i-1}<\delta$, where the $\delta$ is selected so that by uniformly continuity of $f(x)$ on $[t_{i-1},t_i]$ we have that $|f(x)-f(y)|<\frac{\epsilon}{2(b-a)}$ for $x,y\in[t_{i-1},t_i]$ (which of course means $|x-y|<\delta$). Notice that since $f(x)$ is continuous on $[t_{i-1},t_i]$ then by the extreme value theorem it attains a maximum and minimum, that is there are $x_i,y_i\in[t_{i-1},t_i]$ so that $f(x_i)=M_i$ and $f(y_i)=m_i$, which means that $M_i-m_i<\frac{\epsilon}{2(b-a)}$.
+		Hence we have:
+		
+		\begin{equation*}
+		\begin{gathered}
+		U(f,P)-L(f,P)=\sum_{i=1}^N (M_i-m_i)(t_i-t_{i-1})\\\leq (M-m)(t_1-t_0)+\sum_{i=2}^{N-1} (M_i-m_i)(t_i-t_{i-1})+(M-m)(t_{N}-t_{N-1})\\
+		<(M-m)(t_1-t_0)+\sum_{i=2}^{N-1} \frac{\epsilon}{2(b-a)}(t_i-t_{i-1})+(M-m)(t_{N}-t_{N-1})\\
+		\leq (M-m)(t_1-t_0)+\sum_{i=1}^N \frac{\epsilon}{2(b-a)}(t_i-t_{i-1})+(M-m)(t_{N}-t_{N-1})\\
+		\leq \frac{\epsilon}{4(M-m)}(M-m)+\frac{\epsilon}{4(M-m)}(M-m)+\frac{\epsilon}{2(b-a)}(b-a)\\=\frac \epsilon 4 + \frac \epsilon 4 + \frac \epsilon 2 =\epsilon
+		\end{gathered}
+		\end{equation*}
+		\item Since $f(x)$ is piecewise continuous, then there is a finite collection of point $a=y_0,...,y_n=b$ with $f(x)$ continuous on $(y_{i-1},y_i)$ and bounded on $[y_{i-1},y_i]$. By the previous part $f(x)$ is integrable on $[y_{i-1},y_i]$. Since $[a,b]=\cup_{i=1}^n [y_{i-1},y_i]$, and $f(x)$ is integrable on each $[y_{i-1},y_i]$ then $f$ is integrable on $[a,b]$ by the integral segmentation theorem from class.
+	\end{enumerate}
+\end{proof}
+
+\begin{problem}
+	Let \[f(x) = \pwi{x^2}{x\in \mbQ}{0}{x\notin \mbQ}.\] Prove that $f(x)$ is not integrable on $[0,1]$.
+\end{problem}
+
+\begin{proof}
+	Idea: clearly the lower sums are going to always be zero as in any interval we can find an irrational number (by density) where the minimum is achieved. The upper sums will have an infimum greater than 0, this will follow from showing that on any interval we can find a rational number, and the supremum (needed for the upper sums) will end up being on the right endpoint of each interval in the partition. This is going to look like the upper sum for the function $f(x)=x^2$, which of course has an integral of $\frac 1 3 \neq 0$ on the interval.
+	
+	Let's do the computations, let P be an arbitrary partition, then 
+	
+	\[
+	L(f,P) = \sum_{i=1}^n m_i (x_i-x_{i-1}).
+	\]
+	
+	Now 
+	
+	\[
+	m_i = \inf \{f(x):x\in [x_{i-1},x_i]\},
+	\]
+	
+	Since for any such interval we can always find an irrational number by density, and the function is positive otherwise on $[0,1]$, then the infimum is 0, so that $m_i=0$.
+	
+	For the upper sums we have for an arbitrary partition that
+	
+	\[
+	U(f,P) = \sum_{i=1}^n M_i (x_i-x_{i-1}).
+	\]
+	
+	We need to compute $M_{i}=\sup\{f(x)|x\in[x_{i-1},x_i]\}$, notice that we can always find a rational number on such an interval, so we should expect it to be a number greater than 0, but what is it exactly? Well we know that if $x\in \mathbb Q$ then the function is just $f(x)=x^2$ so we can rewrite the above as $\sup\{f(x)|x\in[x_{i-1},x_i]\}=\sup\{x^2|x\in[x_{i-1},x_i]\cap \mathbb Q\}$. What is the supremum of this set? Recall that a set does not need to contain its supremum, in fact the sup here is exactly $M_i=\sup\{x^2|x\in[x_{i-1},x_i]\cap \mathbb Q\}= x_i^2$ (note that here we use that $x^2$ is monotonic increasing for $x\geq 0$). This makes the upper sum,
+	
+	\[
+	U(f,P) =\sum_{i=1}^n x^2_i(x_i-x_{i-1}).
+	\]
+	
+	What does this sum look like? Well it looks like we are taking the max of the function $f(x)=x^2$ on intervals of the form $[x_{i-1},x_i]$. So then \[U(f,P)=U(x^2,P)\],
+	
+	and 
+	
+	\[\inf\{U(f,P)|\text{P a partition}\}=\inf \{U(x^2,P)|\text{P a partition}\}.\] 
+	
+	But since $f(x)=x^2$ is integrable on $[0,1]$ we get that,
+	
+	\[\inf \{U(x^2,P)|\text{P a partition}\}=\int_0^1 x^2 dx=\frac 1 3.\]
+	
+	This means that $\sup\{L(f,P)\}=0\neq \frac 1 3 =  \inf\{U(f,P)\}$, so that $f(x)$ is not integrable on $[0,1]$.
+\end{proof}
+
+	
+\end{document}
