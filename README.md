@@ -5,6 +5,11 @@ Mathematics 3A03 at McMaster University
 
 ----
 
+**SPECIAL OFFICE HOURS BEFORE FINAL EXAM:**
+- Dr. Earn: Thursday 11 April 2019, 1:30-3:00pm
+
+----
+
 - **Instructor:** [David Earn](http://davidearn.mcmaster.ca)
 - **Lecture times:** Monday and Wednesday @ 11:30am and Friday @ 1:30pm
 - **Lecture location:** [Chester New Hall 103](https://library.mcmaster.ca/spaces/cct) (enter "CNH 103" into the search field)
