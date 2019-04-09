@@ -6,7 +6,8 @@ Mathematics 3A03 at McMaster University
 ----
 
 **SPECIAL OFFICE HOURS BEFORE FINAL EXAM:**
-- Dr. Earn: Thursday 11 April 2019, 1:30-3:00pm
+- Niky Hristov: Thursday 11 April 2019, 11:00am - 1:00pm
+- Dr. Earn: Thursday 11 April 2019, 1:30pm - 3:00pm
 
 **EXTRA PRACTICE PROBLEMS:**
 - As requested, I have posted
