@@ -8,6 +8,12 @@ _All assignments must be submitted via [Crowdmark](https://crowdmark.com/).  Que
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Tuesday 17 September 2019, 2:25pm
 
+## 2019 Assignment 2
+
+- [Question sheet](./3aa2_2019f.pdf)
+
+**DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Tuesday 1 October 2019, 2:25pm
+
 # Assignments from previous years
 
 - [winter 2019 Assignments](./2019w/assignments.md)
