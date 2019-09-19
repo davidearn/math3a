@@ -13,9 +13,9 @@
 | 2 | [04](3al04_2019.pdf) | Tue 10 Sep 2019 | Properties of &#8477; III |  Chapter 1 |
 |  | [05](3al05_2019.pdf) | Thu 12 Sep 2019 | Properties of &#8477; IV |  Chapter 1 |
 |  | [06](3al06_2019.pdf) | Fri 13 Sep 2019 | Sequences |  Chapter 2 |
-| 3 | [07](3al07_2019.pdf) | Mon 21 Jan 2019 | Sequences II |  Chapter 2 |
-|  | [08](3al08_2019.pdf) | Wed 23 Jan 2019 | Sequences III |  Chapter 2 |
-|  | [09](3al09_2019.pdf) | Fri 25 Jan 2019 | Sequences IV |  Chapter 2 |
+| 3 | [07](3al07_2019.pdf) | Tue 17 Sep 2019 | Sequences II |  Chapter 2 |
+|  | [08](3al08_2019.pdf) | Thu 19 Sep 2019 | Sequences III |  Chapter 2 |
+|  | [09](3al09_2019.pdf) | Fri 20 Sep 2019 | Sequences IV |  Chapter 2 |
 | 4 | [10](3al10_2019.pdf) | Mon 28 Jan 2019 | Sequences V |  Chapter 2 |
 |  | [11](3al11_2019.pdf) | Wed 30 Jan 2019 | Sequences VI |  Chapter 2 |
 |  | [12](3al12_2019.pdf) | Fri 1 Feb 2019 | Sequences VII |  Chapter 2 |
