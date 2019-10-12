@@ -27,8 +27,8 @@
 |  | [18](3al18_2019.pdf) | Fri 11 Oct 2019 | Continuity | Chapter 5 |
 | 7 | [19](3al19_2019.pdf) | Tue 22 Oct 2019 | Continuity II | Chapter 5 |
 |  | [20](3al20_2019.pdf) | Thu 24 Oct 2019 | Continuity III | Chapter 5 |
-|  | [21](3al21_2019.pdf) | Fri 25 Oct 2019 | Continuity IV | Test 1 at 7:00pm |
-| 8 | [22](3al22_2019.pdf) | Tue 29 Oct 2019 | Continuity V | Chapter 5 |
+|  | [21](3al21_2019.pdf) | Fri 25 Oct 2019 | Continuity IV | Chapter 5 |
+| 8 | [22](3al22_2019.pdf) | Tue 29 Oct 2019 | Continuity V | Test 1 at 5:30pm |
 |  | [23](3al23_2019.pdf) | Thu 31 Oct 2019 | Continuity VI | Chapter 5 |
 |  | [24](3al24_2019.pdf) | Fri 1 Nov 2019 | Differentiation | Chapter 7 |
 | 9 | [25](3al25_2019.pdf) | Tue 5 Nov 2019 | Differentiation II | Chapter 7 |
