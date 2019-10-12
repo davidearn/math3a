@@ -21,27 +21,28 @@
 |  | [12](3al12_2019.pdf) | Fri 27 Sep 2019 | Sequences VII |  Chapter 2 |
 | 5 | [13](3al13_2019.pdf) | Tue 1 Oct 2019 | Topology of &#8477; I | Chapter 4 |
 |  | [14](3al14_2019.pdf) | Thu 3 Oct 2019 | Topology of &#8477; II | Chapter 4 |
-| 6 | [15](3al15_2019.pdf) | Fri 4 Oct 2019 | Topology of &#8477; III | Chapter 4 |
-|  | [16](3al16_2019.pdf) | Tue 8 Oct 2019 | Topology of &#8477; IV | Chapter 4 |
+|  | [15](3al15_2019.pdf) | Fri 4 Oct 2019 | Topology of &#8477; III | Chapter 4 |
+| 6 | [16](3al16_2019.pdf) | Tue 8 Oct 2019 | Topology of &#8477; IV | Chapter 4 |
 |  | [17](3al17_2019.pdf) | Thu 10 Oct 2019 | Topology of &#8477; V | Chapter 4 |
-| 7 | [18](3al18_2019.pdf) | Fri 11 Oct 2019 | Continuity | Chapter 5 |
-|  | [19](3al19_2019.pdf) | Tue 22 Oct 2019 | Continuity II | Chapter 5 |
+|  | [18](3al18_2019.pdf) | Fri 11 Oct 2019 | Continuity | Chapter 5 |
+| 7 | [19](3al19_2019.pdf) | Tue 22 Oct 2019 | Continuity II | Chapter 5 |
 |  | [20](3al20_2019.pdf) | Thu 24 Oct 2019 | Continuity III | Chapter 5 |
-| 8 | [21](3al21_2019.pdf) | Fri 25 Oct 2019 | Continuity IV | Test 1 at 7:00pm |
-|  | [22](3al22_2019.pdf) | Tue 29 Oct 2019 | Continuity V | Chapter 5 |
+|  | [21](3al21_2019.pdf) | Fri 25 Oct 2019 | Continuity IV | Test 1 at 7:00pm |
+| 8 | [22](3al22_2019.pdf) | Tue 29 Oct 2019 | Continuity V | Chapter 5 |
 |  | [23](3al23_2019.pdf) | Thu 31 Oct 2019 | Continuity VI | Chapter 5 |
-| 9 | [24](3al24_2019.pdf) | Fri 1 Nov 2019 | Differentiation | Chapter 7 |
-|  | [25](3al25_2019.pdf) | Tue 5 Nov 2019 | Differentiation II | Chapter 7 |
+|  | [24](3al24_2019.pdf) | Fri 1 Nov 2019 | Differentiation | Chapter 7 |
+| 9 | [25](3al25_2019.pdf) | Tue 5 Nov 2019 | Differentiation II | Chapter 7 |
 |  | [26](3al26_2019.pdf) | Thu 7 Nov 2019 | Integration | Chapter 8 |
-| 10 | [27](3al27_2019.pdf) | Fri 8 Nov 2019 | Integration II | Chapter |
-|  | [28](3al28_2019.pdf) | Tue 12 Nov 2019 | Integration III | Chapter 8 |
+|  | [27](3al27_2019.pdf) | Fri 8 Nov 2019 | Integration II | Chapter |
+| 10 | [28](3al28_2019.pdf) | Tue 12 Nov 2019 | Integration III | Chapter 8 |
 |  | [29](3al29_2019.pdf) | Thu 14 Nov 2019 | Integration IV | Chapter 8 |
-| 11 | [30](3al30_2019.pdf) | Fri 15 Nov 2019 | Integration V | Chapter 8 |
-|  | [31](3al31_2019.pdf) | Tue 19 Nov 2019 | Sequences of Functions | Chapter 9 |
+|  | [30](3al30_2019.pdf) | Fri 15 Nov 2019 | Integration V | Chapter 8 |
+| 11 | [31](3al31_2019.pdf) | Tue 19 Nov 2019 | Sequences of Functions | Chapter 9 |
 |  | [32](3al32_2019.pdf) | Thu 21 Nov 2019 | Sequences of Functions II | Chapter 10 |
-| 12 | [33](3al33_2019.pdf) | Fri 22 Nov 2019 | Pre-test Q&A<br>Sequences of Functions III | Test 2 at 7:00pm |
-|  | [34](3al34_2019.pdf) | Tue 26 Nov 2019 | What is &#8477;? |  |
+|  | [33](3al33_2019.pdf) | Fri 22 Nov 2019 | Pre-test Q&A<br>Sequences of Functions III | Test 2 at 7:00pm |
+| 12 | [34](3al34_2019.pdf) | Tue 26 Nov 2019 | What is &#8477;? |  |
 |  | [35](3al35_2019.pdf) | Thu 28 Nov 2019 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2019.pdf) |
-| 13 | [36](3al36_2019.pdf) | Fri 29 Nov 2019 | Pre-exam Q&A |  |
+|  | [36](3al36_2019.pdf) | Fri 29 Nov 2019 | Pre-exam Q&A |  |
+| 13 | [37](3al37_2019.pdf) | Tue 3 Dec 2019 | Pre-exam Q&A |  |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
