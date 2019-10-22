@@ -12,14 +12,22 @@ _All assignments must be submitted via [Crowdmark](https://crowdmark.com/).  Que
 ## 2019 Assignment 2
 
 - [Question sheet](./3aa2_2019f.pdf)
+- [Solutions](./3aa2s_2019f.pdf)
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Tuesday 1 October 2019, 2:25pm
 
 ## 2019 Assignment 3
 
 - [Question sheet](./3aa3_2019f.pdf)
+- [Solutions](./3aa3s_2019f.pdf)
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Tuesday 22 October 2019, 2:25pm
+
+## 2019 Assignment 4
+
+- [Question sheet](./3aa4_2019f.pdf)
+
+**DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Tuesday 5 November 2019, 2:25pm
 
 # Assignments from previous years
 
