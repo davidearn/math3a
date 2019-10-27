@@ -2,9 +2,9 @@
 
 ## fall 2019 Test 1
 
-- Tentative date: Tuesday 29 October 2019
-- Tentative time: 5:30-7:00pm
-- Tentative location: [JHE-264](https://library.mcmaster.ca/cct/class-dir/jhe-264)
+- Date: Tuesday 29 October 2019
+- Time: 5:30-7:00pm
+- Location: [JHE-264](https://library.mcmaster.ca/cct/class-dir/jhe-264)
 
 ## fall 2019 Test 2
 
