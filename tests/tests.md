@@ -5,6 +5,8 @@
 - Date: Tuesday 29 October 2019
 - Time: 5:30-7:00pm
 - Location: [JHE-264](https://library.mcmaster.ca/cct/class-dir/jhe-264)
+- [Questions](2019f/3at1_2019f.pdf)
+- [Solutions](2019f/3at1s_2019f.pdf)
 
 ## fall 2019 Test 2
 
