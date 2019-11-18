@@ -38,10 +38,10 @@
 |  | [28](3al28_2019.pdf) | Thu 14 Nov 2019 | Integration III | Chapter 8 |
 |  | [29](3al29_2019.pdf) | Fri 15 Nov 2019 | Integration IV | Chapter 8 |
 | 11 | [30](3al30_2019.pdf) | Tue 19 Nov 2019 | Sequences of Functions | Chapter 9 |
-|  | [31](3al31_2019.pdf) | Thu 21 Nov 2019 | Sequences of Functions II<br>What is &#8477;? | Chapter 10 |
+|  | [31](3al31_2019.pdf) | Thu 21 Nov 2019 | What is &#8477;? | Chapter 10 |
 |  | [32](3al32_2019.pdf) | Fri 22 Nov 2019 | Surreal Numbers | Guest Lecture<br>[slides](./surreal2019.pdf) |
 | 12 | [33](3al33_2019.pdf) | Tue 26 Nov 2019 | Pre-test Q&A | Test 2 at 5:30pm |
-|  | [34](3al34_2019.pdf) | Thu 28 Nov 2019 | Sequences of Functions III | Chapter 10 |
+|  | [34](3al34_2019.pdf) | Thu 28 Nov 2019 | Sequences of Functions II | Chapter 10 |
 |  | [35](3al35_2019.pdf) | Fri 29 Nov 2019 | Integration V | Chapter 8 |
 | 13 | [36](3al36_2019.pdf) | Tue 3 Dec 2019 | Pre-exam Q&A |  |
 
