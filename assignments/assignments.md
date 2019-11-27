@@ -37,6 +37,12 @@ _All assignments must be submitted via [Crowdmark](https://crowdmark.com/).  Que
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Thursday 21 November 2019, 2:25pm
 
+## 2019 Assignment 6
+
+- [Question sheet](./3aa6_2019f.pdf)
+
+**DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Tuesday 3 December 2019, 2:25pm
+
 # Assignments from previous years
 
 - [winter 2019 Assignments](./2019w/assignments.md)
