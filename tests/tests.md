@@ -13,6 +13,8 @@
 - Tentative date: Tuesday 26 November 2019
 - Tentative time: 5:30-7:00pm
 - Tentative location: [JHE-264](https://library.mcmaster.ca/cct/class-dir/jhe-264)
+- [Questions](2019f/3at2_2019f.pdf)
+- [Solutions](2019f/3at2s_2019f.pdf)
 
 # Tests from previous years
 
