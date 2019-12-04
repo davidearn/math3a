@@ -40,6 +40,7 @@ _All assignments must be submitted via [Crowdmark](https://crowdmark.com/).  Que
 ## 2019 Assignment 6
 
 - [Question sheet](./3aa6_2019f.pdf)
+- [Solutions](./3aa6s_2019f.pdf)
 
 **DUE ONLINE via [Crowdmark](https://crowdmark.com/):** Tuesday 3 December 2019, 2:25pm
 
