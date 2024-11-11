@@ -2,7 +2,9 @@
 
 _Tutorials will begin in the second week of classes._
 
-Thursdays @ 1:30pm<!--, MDCL 1105 -->
+Thursdays @ 1:30pm<!--, 
+[MDCL 1105](https://library.mcmaster.ca/cct/class-dir/mdcl-1105)
+-->
 
 ## Resources
 
