@@ -20,6 +20,14 @@ Mathematics 3A03 at McMaster University
 
 ### Information from previous years
 
+_Note that the lecture slides posted below relate to the version of
+Math 3A03 that existed before the introduction of Math 3IA3.
+Currently, Math 3IA3 covers a large portion of the material that was
+previously covered in Math 3A03.  The current Math 3A03 covers the
+remainder of the material previously covered in Math 3A03 but not in
+Math 3IA3, plus additional material that was never previously part of
+Math 3A03._
+
 [2019f Lectures](lectures/2019f/LectureSchedule2019f.md)
 
 [2019w Lectures](lectures/2019w/LectureSchedule2019w.md)
