@@ -8,7 +8,7 @@ Mathematics 3A03 at McMaster University
 - **Instructor:** [David Earn](http://davidearn.mcmaster.ca)
 - **Lecture times:** Monday and Wednesday @ 11:30am, Friday @ 1:30pm
 <!-- - **Lecture location:** [Togo Salmon Hall B128](https://library.mcmaster.ca/cct/class-dir/tsh-b128) -->
-- [Course syllabus, winter 2025](simple syllabus site)
+- [Course syllabus, winter 2025](https://mcmaster.simplesyllabusca.com/en-US/doc/cfr7a1cxn/Winter-2025-MATH-3A03-C01-EARN-)
 
 [Lectures](lectures/LectureSchedule.md)
 
