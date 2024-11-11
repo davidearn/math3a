@@ -52,7 +52,7 @@ _All assignments must be submitted via [Crowdmark](https://crowdmark.com/).  Que
 
 # Assignments from previous years
 
-- [fall 2024 Assignments](./2024/assignments.md)
-- [winter 2024 Assignments](./2024w/assignments.md)
+- [fall 2019 Assignments](./2019/assignments.md)
+- [winter 2019 Assignments](./2019w/assignments.md)
 - [2017 Assignments](./2017/assignments.md)
 - [2016 Assignments](./2016/assignments.md)
