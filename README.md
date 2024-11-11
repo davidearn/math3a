@@ -1,14 +1,14 @@
 # math3a
 Mathematics 3A03 at McMaster University
 
-### winter 2024 course
+### winter 2025 course
 
 ----
 
 - **Instructor:** [David Earn](http://davidearn.mcmaster.ca)
 - **Lecture times:** Monday and Wednesday @ 11:30am, Friday @ 1:30pm
 <!-- - **Lecture location:** [Togo Salmon Hall B128](https://library.mcmaster.ca/cct/class-dir/tsh-b128) -->
-- [Course syllabus, winter 2024](simple syllabus site)
+- [Course syllabus, winter 2025](simple syllabus site)
 
 [Lectures](lectures/LectureSchedule.md)
 
