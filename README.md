@@ -18,6 +18,8 @@ Mathematics 3A03 at McMaster University
 
 [Tests](tests/tests.md)
 
+[Polls](polls/polls.md)
+
 ### Information from previous years
 
 _Note that the lecture slides posted below relate to the version of
