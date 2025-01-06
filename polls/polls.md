@@ -3,5 +3,5 @@ Class polls are conducted on childsmath. Log in at <https://www.childsmath.ca/ch
 
 - Click on *Math 3A03*.
 - Click on *Take Class Poll*.
-- After selecting an answer, click the *Submit* button.
+- After selecting your answer(s), click the *Submit* button.
 
