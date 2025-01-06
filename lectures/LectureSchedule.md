@@ -1,6 +1,7 @@
 * To download slides for a lecture, click on the lecture number.
 * Slides for a sequence of lectures on the same topic are combined, so you need only the pdf for the final lecture on a given topic.
 * The schedule for lectures that have not yet occurred is _tentative_.
+* Slides posted before a lecture will usually be revised after the lecture; make sure to download the lastest version.
 * Please e-mail the instructor if you find any errors in slides.
 
 ## Lecture Schedule
