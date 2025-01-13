@@ -12,10 +12,8 @@ _Question sheets and solutions are posted here for convenience._
 
 ## 2025 Assignment 1
 
+- <u>Participation deadline</u>: Monday 20 January 2025 @ 11:25am
 - [Question sheet](./3aa1_2025.pdf)
+
 <!-- - [Solutions](./3aa1s_2025.pdf) -->
 
-<!-- ... explain how to submit MC answers and full solutions... -->
-
-<!-- **DUE ONLINE via [Crowdmark](https://crowdmark.com/):**  -->
-<!-- - Tuesday 17 January 2025, 2:25pm -->
