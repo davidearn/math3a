@@ -14,6 +14,5 @@ _Question sheets and solutions are posted here for convenience._
 
 - <u>Participation deadline</u>: Monday 20 January 2025 @ 11:25am
 - [Question sheet](./3aa1_2025.pdf)
-
-<!-- - [Solutions](./3aa1s_2025.pdf) -->
+- [Solutions](./3aa1s_2025.pdf)
 
