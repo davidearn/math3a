@@ -11,9 +11,10 @@
 | 1 | [01](3al01_2025.pdf) | Mon 6 Jan 2025 | Introduction |  [Course syllabus](https://mcmaster.simplesyllabusca.com/en-US/doc/cfr7a1cxn/Winter-2025-MATH-3A03-C01-EARN-) |
 |  | [02](3al02_2025.pdf) | Wed 8 Jan 2025 | Differentiation | BS Chapter 6; TBB Chapter 7 |
 |  | [03](3al03_2025.pdf) | Fri 10 Jan 2025 | Differentiation II | BS Chapter 6; TBB Chapter 7 |
-|  | [04](3al04_2025.pdf) | Mon 13 Jan 2025 | Differentiation III | BS Chapter 6; TBB Chapter 7 |
+| 2 | [04](3al04_2025.pdf) | Mon 13 Jan 2025 | Differentiation III | BS Chapter 6; TBB Chapter 7 |
 |  | [05](3al05_2025.pdf) | Wed 15 Jan 2025 | Differentiation IV | BS Chapter 6; TBB Chapter 7 |
-|  | [06](3al06_2025.pdf) | Mon 20 Jan 2025 | Differentiation V | BS Chapter 6; TBB Chapter 7 |
+| 3 | [06](3al06_2025.pdf) | Mon 20 Jan 2025 | Differentiation V | BS Chapter 6; TBB Chapter 7 |
 |  | [07](3al07_2025.pdf) | Wed 22 Jan 2025 | Integration | BS Chapter 7; TBB Chapter 8 |
+|  | [08](3al08_2025.pdf) | Fri 24 Jan 2025 | Integration II | BS Chapter 7; TBB Chapter 8 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
