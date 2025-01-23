@@ -17,5 +17,9 @@
 |  | [07](3al07_2025.pdf) | Wed 22 Jan 2025 | Integration | BS Chapter 7; TBB Chapter 8 |
 |  | [08](3al08_2025.pdf) | Fri 24 Jan 2025 | Integration II | BS Chapter 7; TBB Chapter 8 |
 | 4 | [09](3al09_2025.pdf) | Mon 27 Jan 2025 | Integration III | BS Chapter 7; TBB Chapter 8 |
+|  | [10](3al10_2025.pdf) | Wed 29 Jan 2025 | Integration IV | BS Chapter 7; TBB Chapter 8 |
+| 5 | [11](3al11_2025.pdf) | Mon 3 Feb 2025 | Integration V | BS Chapter 7; TBB Chapter 8 |
+|  | [12](3al12_2025.pdf) | Wed 5 Feb 2025 | Integration VI | BS Chapter 7; TBB Chapter 8 |
+|  | [13](3al13_2025.pdf) | Fri 7 Feb 2025 | Integration VII | BS Chapter 7; TBB Chapter 8 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
