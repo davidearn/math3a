@@ -16,5 +16,6 @@
 | 3 | [06](3al06_2025.pdf) | Mon 20 Jan 2025 | Differentiation V | BS Chapter 6; TBB Chapter 7 |
 |  | [07](3al07_2025.pdf) | Wed 22 Jan 2025 | Integration | BS Chapter 7; TBB Chapter 8 |
 |  | [08](3al08_2025.pdf) | Fri 24 Jan 2025 | Integration II | BS Chapter 7; TBB Chapter 8 |
+| 4 | [09](3al09_2025.pdf) | Mon 27 Jan 2025 | Integration III | BS Chapter 7; TBB Chapter 8 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
