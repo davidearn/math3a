@@ -16,3 +16,7 @@ _Question sheets and solutions are posted here for convenience._
 - [Question sheet](./3aa1_2025.pdf)
 - [Solutions](./3aa1s_2025.pdf)
 
+## 2025 Assignment 2
+
+- <u>Participation deadline</u>: Monday 3 February 2025 @ 11:25am
+- [Question sheet](./3aa2_2025.pdf)
