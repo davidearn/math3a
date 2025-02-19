@@ -26,3 +26,4 @@ _Question sheets and solutions are posted here for convenience._
 
 - <u>Participation deadline</u>: Monday 24 February 2025 @ 11:25am
 - [Question sheet](./3aa3_2025.pdf)
+- [Solutions](./3aa3s_2025.pdf) **PLEASE do the poll before reading the solutions!**
