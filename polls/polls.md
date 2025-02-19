@@ -5,3 +5,4 @@ Class polls are conducted on childsmath. Log in at <https://www.childsmath.ca/ch
 - Click on *Take Class Poll*.
 - After selecting your answer(s), click the *Submit* button.
 
+[Poll questions and results](./2025/)
