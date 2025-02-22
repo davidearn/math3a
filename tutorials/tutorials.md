@@ -11,6 +11,11 @@ Thursdays @ 2:30pm<!--,
 - Thursday 12:30-1:30 (Math Cafe)
 - Friday 12:30-1:30 (HH 207)
 
+## TA's solutions to some problems
+
+- [Differentiation](./Differentiation.pdf)
+- [Integration](./Integration.pdf)
+
 ## Resources
 
 [Crash course on logic (in 3 pages)](./DarioValdebenito_CrashCourseOnLogic.pdf)
