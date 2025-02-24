@@ -21,7 +21,7 @@
 | 5 | [11](3al11_2025.pdf) | Mon 3 Feb 2025 | Integration V | BS Chapter 7; TBB Chapter 8 |
 |  | [12](3al12_2025.pdf) | Wed 5 Feb 2025 | Integration VI | BS Chapter 7; TBB Chapter 8 |
 |  | [13](3al13_2025.pdf) | Fri 7 Feb 2025 | Integration VII | BS Chapter 7; TBB Chapter 8 |
-| 6 | [14](3al14_2025.pdf) | Mon 10 Feb 2025 | Topology of &#8477; I |  TBB Chapter 4 |
+| 6 | [14](3al14_2025.pdf) | Mon 10 Feb 2025 | Topology of &#8477; |  TBB Chapter 4 |
 |  | [15](3al15_2025.pdf) | Wed 12 Feb 2025 | Topology of &#8477; II |  TBB Chapter 4 |
 |  | [16](3al16_2025.pdf) | Fri 14 Feb 2025 | Topology of &#8477; III |  TBB Chapter 4 |
 | 7 | [17](3al17_2025.pdf) | Mon 24 Feb 2025 | Topology of &#8477; IV |  TBB Chapter 4; [Test structure](3at_2025_structure.pdf) |
