@@ -26,5 +26,8 @@
 |  | [16](3al16_2025.pdf) | Fri 14 Feb 2025 | Topology of &#8477; III |  TBB Chapter 4 |
 | 7 | [17](3al17_2025.pdf) | Mon 24 Feb 2025 | Topology of &#8477; IV |  TBB Chapter 4; [Test structure](3at_2025_structure.pdf) |
 |  | [18](3al18_2025.pdf) | Wed 26 Feb 2025 | Examples; Q&A |  TBB Chapter 4 |
+|  | [19](3al19_2025.pdf) | Fri 28 Feb 2025 | Sequences and Series of Functions | TBB Chapters 9 |
+| 8 | [20](3al20_2025.pdf) | Mon 3 Mar 2025 | Sequences and Series of Functions | TBB Chapters 9 |
+|  | [21](3al21_2025.pdf) | Wed 5 Mar 2025 | Sequences and Series of Functions | TBB Chapters 9 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
