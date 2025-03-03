@@ -2,6 +2,11 @@
 
 ## winter 2025 Test
 
-- Tentative date: Thursday 27 February 2025
-- Tentative time: 7:00 p.m.
-- Tentative location: [](https://library.mcmaster.ca/cct/class-dir/hh-302)
+- Date: Thursday 27 February 2025
+- Time: 7:00 p.m.
+- Location: [HH-302](https://library.mcmaster.ca/cct/class-dir/hh-302)
+
+## test and solutions
+
+- [test](3at_2025.pdf)
+- [solutions](3ats_2025.pdf)
