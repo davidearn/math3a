@@ -27,3 +27,8 @@ _Question sheets and solutions are posted here for convenience._
 - <u>Participation deadline</u>: Monday 24 February 2025 @ 11:25am
 - [Question sheet](./3aa3_2025.pdf)
 - [Solutions](./3aa3s_2025.pdf) **PLEASE do the poll before reading the solutions!**
+
+## 2025 Assignment 4
+
+- <u>Participation deadline</u>: Wednesday 12 March 2025 @ 11:25am
+- [Question sheet](./3aa4_2025.pdf)
