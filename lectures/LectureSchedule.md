@@ -29,5 +29,7 @@
 |  | [19](3al19_2025.pdf) | Fri 28 Feb 2025 | Sequences and Series of Functions | TBB Chapters 9 |
 | 8 | [20](3al20_2025.pdf) | Mon 3 Mar 2025 | Sequences and Series of Functions | TBB Chapters 9 |
 |  | [21](3al21_2025.pdf) | Wed 5 Mar 2025 | Sequences and Series of Functions | TBB Chapters 9 |
+| 9 | [22](3al22_2025.pdf) | Mon 10 Mar 2025 | Metric Spaces |  TBB Chapter 13 |
+|  | [23](3al23_2025.pdf) | Wed 12 Mar 2025 | Metric Spaces |  TBB Chapter 13 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
