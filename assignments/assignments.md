@@ -32,3 +32,4 @@ _Question sheets and solutions are posted here for convenience._
 
 - <u>Participation deadline</u>: Wednesday 12 March 2025 @ 11:25am
 - [Question sheet](./3aa4_2025.pdf)
+- [Solutions](./3aa4s_2025.pdf)
