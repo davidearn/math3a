@@ -33,6 +33,6 @@
 |  | [23](3al23_2025.pdf) | Wed 12 Mar 2025 | Metric Spaces II |  TBB Chapter 13 |
 |  | [24](3al24_2025.pdf) | Fri 14 Mar 2025 | Surprise! |  |
 | 10 | [25](3al25_2025.pdf) | Wed 12 Mar 2025 | Metric Spaces III |  TBB Chapter 13 |
-|  | [24](3al24_2025.pdf) | Fri 14 Mar 2025 | $\pi$ is irrational |  Happy Pi Day |
+|  | [24](3al24_2025.pdf) | Fri 14 Mar 2025 | Pi is irrational |  Happy Pi Day |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
