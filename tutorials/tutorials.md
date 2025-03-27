@@ -15,6 +15,9 @@ Thursdays @ 2:30pm<!--,
 
 - [Differentiation](./Differentiation.pdf)
 - [Integration](./Integration.pdf)
+- [Topology of R](./Topology_of_R.pdf)
+- [Sequences and Series of Functions](./Sequences_and_Series_of_Functions.pdf)
+- [Metric Spaces](./Metric_Spaces.pdf)
 
 ## Resources
 
