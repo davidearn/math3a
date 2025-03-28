@@ -38,5 +38,6 @@
 | 11 | [28](3al28_2025.pdf) | Mon 24 Mar 2025 | Metric Spaces VI |  TBB Chapter 13 |
 |  | [29](3al29_2025.pdf) | Wed 26 Mar 2025 | Metric Spaces VII |  TBB Chapter 13 |
 |  | [30](3al30_2025.pdf) | Fri 28 Mar 2025 | Metric Spaces VIII |  TBB Chapter 13 |
+| 12 | [31](3al31_2025.pdf) | Mon 31 Mar 2025 | Metric Spaces IX |  TBB Chapter 13 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
