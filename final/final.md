@@ -12,3 +12,7 @@
 	- (possibly online; to be confirmed: check here for updates)
 
 _The above dates and times are tentative. Check the course here for announcements about any changes in office hours or anything else._
+
+## Extra problems
+
+Download extra problems from the end of the [Assignments](../assignments/assignments.md) page.
