@@ -11,7 +11,7 @@
 - Wednesday 23 April 2025 @ 10:00 am to 12:00 pm and 2:00–4:00 pm
 	- (possibly online; to be confirmed: check here for updates)
 
-_The above dates and times are tentative. Check the course here for announcements about any changes in office hours or anything else._
+_The above dates and times are tentative. Check here for announcements about any changes in office hours or anything else._
 
 ## Extra problems
 
