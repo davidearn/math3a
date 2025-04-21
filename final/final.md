@@ -8,7 +8,9 @@
 
 - Thursday 10 April 2025 @ 1:30–2:30 pm
 - Thursday 17 April 2025 @ 1:30–2:30 pm
-- <span style="color: red;">CHANGES TO OFFICE HOURS THIS WEEK:</span>
+
+<span style="color: red;">CHANGES TO OFFICE HOURS THIS WEEK (21-23 APRIL 2025):</span>
+
 - <s>Wednesday 23 April 2025 @ 10:00 am to 12:00 pm and 2:00–4:00 pm</s>
 - (in person in my office) Monday 21 April 2025 @ 2:00-3:00pm 
 - (online via zoom) Tuesday 22 April 2025 @ 7:30-8:30pm
