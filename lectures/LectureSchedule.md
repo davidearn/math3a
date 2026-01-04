@@ -8,9 +8,9 @@
 
 | W | L | Date | Topic | Links/Comments |
 |---|---|------|-------|----------------|
-| 1 | [01](3al01_2025.pdf) | Tue 6 Jan 2026 | Introduction |  [Course syllabus](https://mcmaster.simplesyllabusca.com/en-US/doc/5j3532pil/Winter-2026-MATH-3A03-C01-EARN) |
-|  | [02](3al02_2025.pdf) | Thu 8 Jan 2026 | Differentiation | BS Chapter 6; TBB Chapter 7 |
-|  | [03](3al03_2025.pdf) | Fri 9 Jan 2026 | Differentiation II | BS Chapter 6; TBB Chapter 7 |
-| 2 | [04](3al04_2025.pdf) | Tues 13 Jan 2026 | Differentiation III | BS Chapter 6; TBB Chapter 7 |
+| 1 | [01](3al01_2026.pdf) | Tue 6 Jan 2026 | Introduction |  [Course syllabus](https://mcmaster.simplesyllabusca.com/en-US/doc/5j3532pil/Winter-2026-MATH-3A03-C01-EARN) |
+|  | [02](3al02_2026.pdf) | Thu 8 Jan 2026 | Differentiation | BS Chapter 6; TBB Chapter 7 |
+|  | [03](3al03_2026.pdf) | Fri 9 Jan 2026 | Differentiation II | BS Chapter 6; TBB Chapter 7 |
+| 2 | [04](3al04_2026.pdf) | Tues 13 Jan 2026 | Differentiation III | BS Chapter 6; TBB Chapter 7 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
