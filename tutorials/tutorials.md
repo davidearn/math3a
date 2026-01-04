@@ -2,16 +2,19 @@
 
 _Tutorials will begin in the second week of classes._
 
-Thursdays @ 2:30pm<!--, 
-[MDCL 1105](https://library.mcmaster.ca/cct/class-dir/mdcl-1105)
+Tuesdays @ 12:30pm<!--, 
+[BSB 106](https://library.mcmaster.ca/cct/class-dir/bsb-106)
 -->
 
 ## TA's office hours
 
+- TBA
+<!--
 - Thursday 12:30-1:30 (Math Cafe)
 - Friday 12:30-1:30 (HH 207)
+-->
 
-## TA's solutions to some problems
+## Solutions to some problems (by Kieran Bhaskara)
 
 - [Differentiation](./Differentiation.pdf)
 - [Integration](./Integration.pdf)
