@@ -6,6 +6,8 @@
 
 ## Lecture Schedule
 
+**NOTE:** _The first four lectures will be given virtually.  You should have received an e-mail with the zoom link for these lectures._
+
 | W | L | Date | Topic | Links/Comments |
 |---|---|------|-------|----------------|
 | 1 | [01](3al01_2026.pdf) | Tue 6 Jan 2026 | Introduction |  [Course syllabus](https://mcmaster.simplesyllabusca.com/en-US/doc/5j3532pil/Winter-2026-MATH-3A03-C01-EARN) |
