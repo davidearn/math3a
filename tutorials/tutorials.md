@@ -9,10 +9,6 @@ Tuesdays @ 12:30pm<!--,
 ## TA's office hours
 
 - TBA
-<!--
-- Thursday 12:30-1:30 (Math Cafe)
-- Friday 12:30-1:30 (HH 207)
--->
 
 ## Solutions to some problems (by Kieran Bhaskara)
 
