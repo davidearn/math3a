@@ -10,37 +10,37 @@ are submitted._
 
 _Question sheets and solutions are posted here for convenience._
 
-## 2025 Assignment 1
+## 2026 Assignment 1
 
-- <u>Participation deadline</u>: Monday 20 January 2025 @ 11:25am
-- [Question sheet](./3aa1_2025.pdf)
-- [Solutions](./3aa1s_2025.pdf)
+- <u>Participation deadline</u>: Tuesday 20 January 2026 @ 2:25pm
+- [Question sheet](./3aa1.pdf)
+- [Solutions](./3aa1s.pdf)
 
-## 2025 Assignment 2
+## 2026 Assignment 2
 
-- <u>Participation deadline</u>: Monday 3 February 2025 @ 11:25am
-- [Question sheet](./3aa2_2025.pdf)
-- [Solutions](./3aa2s_2025.pdf)
+- <u>Participation deadline</u>: Tuesday 3 February 2026 @ 2:25pm
+- [Question sheet](./3aa2_2026.pdf)
+- [Solutions](./3aa2s_2026.pdf)
 
-## 2025 Assignment 3
+## 2026 Assignment 3
 
-- <u>Participation deadline</u>: Monday 24 February 2025 @ 11:25am
-- [Question sheet](./3aa3_2025.pdf)
-- [Solutions](./3aa3s_2025.pdf) **PLEASE do the poll before reading the solutions!**
+- <u>Participation deadline</u>: Tuesday 24 February 2026 @ 2:25pm
+- [Question sheet](./3aa3_2026.pdf)
+- [Solutions](./3aa3s_2026.pdf)
 
-## 2025 Assignment 4
+## 2026 Assignment 4
 
-- <u>Participation deadline</u>: Wednesday 12 March 2025 @ 11:25am
-- [Question sheet](./3aa4_2025.pdf)
-- [Solutions](./3aa4s_2025.pdf)
+- <u>Participation deadline</u>: Tuesday 10 March 2026 @ 2:25pm
+- [Question sheet](./3aa4_2026.pdf)
+- [Solutions](./3aa4s_2026.pdf)
 
-## 2025 Assignment 5
+## 2026 Assignment 5
 
-- <u>Participation deadline</u>: Wednesday 4 April 2025 @ 11:25am
-- [Question sheet](./3aa5_2025.pdf)
-- [Solutions](./3aa5s_2025.pdf)
+- <u>Participation deadline</u>: Tuesday 24 March 2026 @ 2:25pm
+- [Question sheet](./3aa5_2026.pdf)
+- [Solutions](./3aa5s_2026.pdf)
 
-## 2025 Extra Problems
+## 2026 Extra Problems
 
-- [Question sheet](./3aep_2025.pdf)
-<!-- [Solutions](./3aeps_2025.pdf)-->
+- [Question sheet](./3aep_2026.pdf)
+<!-- [Solutions](./3aeps_2026.pdf)-->
