@@ -4,6 +4,10 @@
 * Slides posted before a lecture will usually be revised after the lecture; make sure to download the lastest version.
 * Please e-mail the instructor if you find any errors in slides.
 
+## Lecture Recordings
+
+Videos of all lectures are posted on Avenue to Learn.  The first four lectures were recorded via Zoom. Subsequent lectures will be posted automatically via Echo360.
+
 ## Lecture Schedule
 
 **NOTE:** _The first four lectures will be given virtually.  You should have received an e-mail with the zoom link for these lectures._
