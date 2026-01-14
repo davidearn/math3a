@@ -4,19 +4,14 @@
 * Slides posted before a lecture will usually be revised after the lecture; make sure to download the lastest version.
 * Please e-mail the instructor if you find any errors in slides.
 
-## Lecture Recordings
-
-Videos of all lectures are posted on Avenue to Learn.  The first four lectures were recorded via Zoom. Subsequent lectures will be posted automatically via Echo360.
-
 ## Lecture Schedule
-
-**NOTE:** _The first four lectures will be given virtually.  You should have received an e-mail with the zoom link for these lectures._
 
 | W | L | Date | Topic | Links/Comments |
 |---|---|------|-------|----------------|
 | 1 | [01](3al01_2026.pdf) | Tue 6 Jan 2026 | Introduction |  [Course syllabus](https://mcmaster.simplesyllabusca.com/en-US/doc/5j3532pil/Winter-2026-MATH-3A03-C01-EARN) |
 |  | [02](3al02_2026.pdf) | Thu 8 Jan 2026 | Differentiation | BS Chapter 6; TBB Chapter 7 |
 |  | [03](3al03_2026.pdf) | Fri 9 Jan 2026 | Differentiation II | BS Chapter 6; TBB Chapter 7 |
-| 2 | [04](3al04_2026.pdf) | Tues 13 Jan 2026 | Differentiation III | BS Chapter 6; TBB Chapter 7 |
+| 2 | [04](3al04_2026.pdf) | Tue 13 Jan 2026 | Differentiation III | BS Chapter 6; TBB Chapter 7 |
+|  | [05](3al05_2026.pdf) | Thu 15 Jan 2026 | Differentiation IV | BS Chapter 6; TBB Chapter 7 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
