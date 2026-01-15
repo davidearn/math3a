@@ -8,7 +8,7 @@ Tuesdays @ 12:30pm<!--,
 
 ## TA's office hours
 
-- TBA
+- Mondays @ 11:30 am in HH-403.
 
 ## 2026 Tutorial notes (Jeff Marshall-Milne)
 
