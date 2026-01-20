@@ -13,6 +13,7 @@ Tuesdays @ 12:30pm<!--,
 ## 2026 Tutorial notes (Jeff Marshall-Milne)
 
 - [Tutorial 1, 13 Jan 2026](Math3A_2026_Tutorial_01.pdf)
+- [Tutorial 2, 20 Jan 2026](Math3A_2026_Tutorial_02.pdf)
 
 ## Solutions to some problems (by Kieran Bhaskara)
 
