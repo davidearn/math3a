@@ -12,6 +12,7 @@
 |  | [02](3al02_2026.pdf) | Thu 8 Jan 2026 | Differentiation | BS Chapter 6; TBB Chapter 7 |
 |  | [03](3al03_2026.pdf) | Fri 9 Jan 2026 | Differentiation II | BS Chapter 6; TBB Chapter 7 |
 | 2 | [04](3al04_2026.pdf) | Tue 13 Jan 2026 | Differentiation III | BS Chapter 6; TBB Chapter 7 |
-|  | [05](3al05_2026.pdf) | Thu 15 Jan 2026 | Differentiation IV | BS Chapter 6; TBB Chapter 7 |
+|   | [05](3al05_2026.pdf) | Thu 15 Jan 2026 | Differentiation IV | BS Chapter 6; TBB Chapter 7 |
+| 3 | [05](3al06_2026.pdf) | Tue 20 Jan 2026 | Integration | BS Chapter 7; TBB Chapter 8 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
