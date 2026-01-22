@@ -19,8 +19,8 @@ _Question sheets and solutions are posted here for convenience._
 ## 2026 Assignment 2
 
 - <u>Participation deadline</u>: Tuesday 3 February 2026 @ 2:25pm
-- [Question sheet](./3aa2_2026.pdf)
-- [Solutions](./3aa2s_2026.pdf)
+- [Question sheet](./3aa2.pdf)
+- [Solutions](./3aa2s.pdf)
 
 ## 2026 Assignment 3
 
