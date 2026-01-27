@@ -16,5 +16,6 @@
 | 3 | [06](3al06_2026.pdf) | Tue 20 Jan 2026 | Integration | BS Chapter 7; TBB Chapter 8 |
 |   | [07](3al07_2026.pdf) | Thu 22 Jan 2026 | Integration II | BS Chapter 7; TBB Chapter 8 |
 |   | [08](3al08_2026.pdf) | Fri 23 Jan 2026 | Integration III | BS Chapter 7; TBB Chapter 8 |
+| 4 | [09](3al09_2026.pdf) | Tue 27 Jan 2026 | Integration IV | BS Chapter 7; TBB Chapter 8 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
