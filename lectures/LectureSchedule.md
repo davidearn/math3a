@@ -27,3 +27,4 @@
 |  | [17](3al17_2026.pdf) | Fri 13 Feb 2026 | Topology of &#8477; V | TBB Chapter 4 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
+
