@@ -23,4 +23,3 @@
 |  | [13](3al13_2026.pdf) | Thu 5 Feb 2026 | Topology of Reals | TBB Chapter 4 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
-
