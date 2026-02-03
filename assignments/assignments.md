@@ -25,22 +25,22 @@ _Question sheets and solutions are posted here for convenience._
 ## 2026 Assignment 3
 
 - <u>Participation deadline</u>: Tuesday 24 February 2026 @ 2:25pm
-- [Question sheet](./3aa3_2026.pdf)
-- [Solutions](./3aa3s_2026.pdf)
+- [Question sheet](./3aa3.pdf)
+- [Solutions](./3aa3s.pdf)
 
 ## 2026 Assignment 4
 
 - <u>Participation deadline</u>: Tuesday 10 March 2026 @ 2:25pm
-- [Question sheet](./3aa4_2026.pdf)
-- [Solutions](./3aa4s_2026.pdf)
+- [Question sheet](./3aa4.pdf)
+- [Solutions](./3aa4s.pdf)
 
 ## 2026 Assignment 5
 
 - <u>Participation deadline</u>: Tuesday 24 March 2026 @ 2:25pm
-- [Question sheet](./3aa5_2026.pdf)
-- [Solutions](./3aa5s_2026.pdf)
+- [Question sheet](./3aa5.pdf)
+- [Solutions](./3aa5s.pdf)
 
 ## 2026 Extra Problems
 
-- [Question sheet](./3aep_2026.pdf)
-<!-- [Solutions](./3aeps_2026.pdf)-->
+- [Question sheet](./3aep.pdf)
+<!-- [Solutions](./3aeps.pdf)-->
