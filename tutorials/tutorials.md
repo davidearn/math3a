@@ -15,6 +15,7 @@ Tuesdays @ 12:30pm<!--,
 - [Tutorial 1, 13 Jan 2026](Math3A_2026_Tutorial_01.pdf)
 - [Tutorial 2, 20 Jan 2026](Math3A_2026_Tutorial_02.pdf)
 - [Tutorial 3, 27 Jan 2026](Math3A_2026_Tutorial_03.pdf)
+- [Tutorial 4,  9 Feb 2026](Math3A_2026_Tutorial_04.pdf)
 
 ## Solutions to some problems (by Kieran Bhaskara)
 
