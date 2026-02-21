@@ -25,5 +25,6 @@
 | 6 | [15](3al15_2026.pdf) | Tue 10 Feb 2026 | Topology of &#8477; III | TBB Chapter 4 |
 |  | [16](3al16_2026.pdf) | Thu 12 Feb 2026 | Topology of &#8477; IV | TBB Chapter 4 |
 |  | [17](3al17_2026.pdf) | Fri 13 Feb 2026 | Topology of &#8477; V | TBB Chapter 4 |
+| 7| [18](3al18_2026.pdf) | Tue 23 Feb 2026 | Examples, Q&ampA | |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
