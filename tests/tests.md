@@ -5,12 +5,12 @@
 ### Test 1
 
 - Date: Thursday 26 February 2026
-- Time: 7:00 p.m.  (**_to be confirmed_**)
+- Time: 7:00 p.m.
 
 ### Test 2
 
 - Date: Thursday 26 March 2026
-- Time: 7:00 p.m.  (**_to be confirmed_**)
+- Time: 7:00 p.m.
 
 ## winter 2025 Test
 
