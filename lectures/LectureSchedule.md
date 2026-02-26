@@ -27,5 +27,8 @@
 |  | [17](3al17_2026.pdf) | Fri 13 Feb 2026 | Topology of &#8477; V | TBB Chapter 4 |
 | 7| [18](3al18_2026.pdf) | Tue 24 Feb 2026 | Examples, Q&A | |
 |  |                      | Thu 26 Feb 2026 | Office hour in HH-317 | Test tonight! |
+|  | [19](3al19_2026.pdf) | Fri 27 Feb 2026 | Sequences and Series of Functions | TBB Chapter 9 |
+| 8| [20](3al20_2026.pdf) | Tue 3 Mar 2026 | Sequences and Series of Functions II | TBB Chapter 9 |
+|  | [21](3al21_2026.pdf) | Thu 5 Mar 2026 | Sequences and Series of Functions III | TBB Chapter 9 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
