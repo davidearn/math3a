@@ -2,18 +2,16 @@
 
 ## winter 2026 Tests
 
-### Test 1
+### Test 1, Thursday 26 February 2026 @ 7:00 p.m.
 
-- Date: Thursday 26 February 2026
-- Time: 7:00 p.m.
+<!--
+T13 123
+-->
 
 - [test](3at1_2026.pdf)
 - [solutions](3at1s_2026.pdf)
 
-### Test 2
-
-- Date: Thursday 26 March 2026
-- Time: 7:00 p.m.
+### Test 2, Thursday 26 March 2026 @ 7:00 p.m.
 
 ## winter 2025 Test
 
@@ -25,5 +23,6 @@
 ## test and solutions
 -->
 
+- Thursday 27 February 2025 @ 7:00 p.m.
 - [test](3at_2025.pdf)
 - [solutions](3ats_2025.pdf)
