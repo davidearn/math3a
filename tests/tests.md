@@ -7,6 +7,9 @@
 - Date: Thursday 26 February 2026
 - Time: 7:00 p.m.
 
+- [test](3at1_2026.pdf)
+- [solutions](3at1s_2026.pdf)
+
 ### Test 2
 
 - Date: Thursday 26 March 2026
