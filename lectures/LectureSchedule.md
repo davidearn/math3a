@@ -33,5 +33,8 @@
 |  | [22](3al22_2026.pdf) | Fri 6 Mar 2026 | Sequences and Series of Functions IV | TBB Chapter 9 |
 | 9| [23](3al23_2026.pdf) | Tue 10 Mar 2026 | Metric Spaces | TBB Chapter 13 |
 |  | [24](3al24_2026.pdf) | Thu 12 Mar 2026 | Metric Spaces II | TBB Chapter 13 |
+|10| [25](3al25_2026.pdf) | Tue 17 Mar 2026 | Metric Spaces III | TBB Chapter 13 |
+|  | [26](3al26_2026.pdf) | Thu 19 Mar 2026 | Metric Spaces IV | TBB Chapter 13 |
+|  | [27](3al27_2026.pdf) | Fri 20 Mar 2026 | Metric Spaces V | TBB Chapter 13 |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
