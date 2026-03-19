@@ -6,5 +6,5 @@
 
 - [The _p_-norms on real _n_-space (18 March 2026)](pnorms_are_norms.pdf)
 - [The _p_-norms on sequences spaces (18 March 2026)](pnorms_are_norms_on_ellp.pdf)
-- [The p-norms on C[a,b] (18 March 2026)](pnorms_are_norms_on_Cab.pdf)
+- [The _p_-norms on C[_a_,_b_] (18 March 2026)](pnorms_are_norms_on_Cab.pdf)
 
