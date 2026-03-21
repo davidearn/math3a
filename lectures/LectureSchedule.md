@@ -37,6 +37,7 @@
 |  | [26](3al26_2026.pdf) | Thu 19 Mar 2026 | Metric Spaces IV | TBB Chapter 13 |
 |  | [27](3al27_2026.pdf) | Fri 20 Mar 2026 | Metric Spaces V | TBB Chapter 13 |
 |11| [28](3al28_2026.pdf) | Tue 24 Mar 2026 | Metric Spaces VI | TBB Chapter 13 |
-|  | [29](3al29_2026.pdf) | Fri 27 Mar 2026 | &pi; is irrational | &#1F600 |
+|  |                      | Thu 26 Mar 2026 | Office hour in HH-317 | Test 2 at 7:00pm today |
+|  | [29](3al29_2026.pdf) | Fri 27 Mar 2026 | &pi; is irrational | &#128512; |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
