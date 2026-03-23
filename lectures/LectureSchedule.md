@@ -41,3 +41,4 @@
 |  | [29](3al29_2026.pdf) | Fri 27 Mar 2026 | &pi; is irrational | &#128512; |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
+
