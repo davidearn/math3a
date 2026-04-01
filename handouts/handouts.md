@@ -8,3 +8,4 @@
 - [The _p_-norms on sequences spaces (18 March 2026)](pnorms_are_norms_on_ellp.pdf)
 - [The _p_-norms on _C_[_a_,_b_] (18 March 2026)](pnorms_are_norms_on_Cab.pdf)
 
+- [Continuity of the integral operator on _C_[_a_,_b_] (31 March 2026)](volterra_operator_handout.pdf)
