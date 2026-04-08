@@ -13,6 +13,13 @@ T13 123
 
 ### Test 2, Thursday 26 March 2026 @ 7:00 p.m.
 
+<!--
+T13 123
+-->
+
+- [test](3at2_2026.pdf)
+- [solutions](3at2s_2026.pdf)
+
 ## winter 2025 Test
 
 <!--
