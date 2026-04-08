@@ -42,6 +42,7 @@
 |12| [30](3al30_2026.pdf) | Tue 31 Mar 2026 | Metric Spaces VII | TBB Chapter 13 |
 |  | [31](3al31_2026.pdf) | Thu 1 Apr 2026 | Metric Spaces VIII | TBB Chapter 13 |
 |13| [32](3al32_2026.pdf) | Tue 7 Apr 2026 | Metric Spaces IX | TBB Chapter 13 |
+|  | [33](3al32_2026.pdf) | Bonus lecture | Construction of &#8477; |  |
 
 [Main page for this course](https://davidearn.github.io/math3a/)
 
