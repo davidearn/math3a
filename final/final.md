@@ -1,14 +1,14 @@
 # Final Exam
 
-_To be scheduled by the registrar._
+_Scheduled by the registrar._
 
-- Date: TBA
-- Time: TBA
-<!-- - Location: IWC-2 -->
+- Date: Monday 20 April 2026
+- Time: 4:00–6:30pm
+<!-- - Location: PGCLL B138 -->
 
 ## Instructor's office hours during the exam period
 
-- TBA
+- Tuesday 14 April 2026, 1:30–3:30pm
 
 _The above dates and times are tentative. Check here for announcements about any changes in office hours or anything else._
 
